@@ -17,8 +17,10 @@ h1, h2, h3{
     font-family: Didact Gothic, Arial;
     text-align: center;
     text-transform: uppercase;
+    margin: 40px 0 0 0;
     padding: 30px 0 30px 0;
     color: #22435D;
+    text-shadow: -5px -5px 0px #091F30;
 }
 hr{
     width: 20%;
@@ -84,17 +86,22 @@ p{
     background-color: #fff;
     color: #FF0000;
     border: solid #FFFFFF 1px;
+    box-shadow: 5px 5px 0px #091F30;
 }
 .blanc:hover{
     background-color: #22435D;
     border: solid #FFFFFF 1px;
     color: #fff;
+    box-shadow: -5px -5px 0px #091F30;
 }
 .texte-blanc{
     color: #fff;
-}
+        }
 .colonne{
     flex-flow: column wrap;
+}
+.shadow{
+    text-shadow: -3px -3px 0px #D9D9D9;
 }
 footer{
     margin: 100px 0 0 0;
@@ -104,7 +111,15 @@ footer{
     background-color: #22435D;
     color: #fff;
 }
-
+.gros-conteneur{
+    display: flex;
+    width: 100%;
+    flex-flow: column wrap;
+    justify-content:flex-start;
+}
+.titre{
+    width: 100%;
+    }
 
 
 /*CSS hommepage*/
@@ -128,133 +143,148 @@ img.logo-big{
         padding: 10px;
         border-radius: 300px;
     }
-
-.gros-conteneur{
-    display: flex;
-    width: 100%;
-    flex-flow: column wrap;
-    
-}
-.titre{
-    width: 100%;
-    
-}
 .bloc{
     display: flex;
     margin: 2%;
     flex-flow: column wrap;
-    
-    
-}
+    justify-content: center;
+    }
 .contenu{
     margin: 10px;  
 }
 
 /*CSS pour le header pages inscription et connexion */
-    #content-header2 {
-        padding: 30px 0 0 0;
-        background: linear-gradient(to bottom, #FF0000 50%,#F8F8F8 20%);
-        width: 100%;
-    }
-    img.logo-big2{
-        display: block;
-        margin: auto;
-        align-content: center;
-        background-color: #fff;
-        padding: 10px;
-        border-radius: 300px;
-    }
+#content-header2 {
+    padding: 30px 0 0 0;
+    background: linear-gradient(to bottom, #FF0000 50%,#F8F8F8 20%);
+    width: 100%;
+}
+img.logo-big2{
+    display: block;
+    margin: auto;
+    align-content: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 300px;
+}
 
-    /* CSS header page produit et profil */
-    #content-header3 {
-        padding: 30px 0 0 0;
-        background: linear-gradient(to bottom, #FF0000 50%,#F8F8F8 20%);
-        width: 100%;
-    }
-    header nav {
-        width: 70%;
-        margin: auto;
-    }
+/* CSS header page produit et profil */
+#content-header3 {
+    padding: 30px 0 0 0;
+    background: linear-gradient(to bottom, #FF0000 50%,#F8F8F8 20%);
+    width: 100%;
+}
+nav{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #F8F8F8;
+    position: sticky;
+    top: 0px;
+}
+.conteneur-nav{
+    position: absolute;
+    width: 100%;
+}
+nav input[type=checkbox]{
+    display: none;
+}
+nav label{
+    display: inline-block;
+    width: 100%;
+    padding: 30px 0px;
+    text-align: center;
+    background-color: #F8F8F8;
+}
 
-    .menu {
-        font-family: Francois One, Arial;
-        color: #fff;
-        text-transform: uppercase;
-        font-size: 18px;
-    }
-    ul li a{
-        color:#fff;
-        text-decoration: none;
-    }
-    img.user{
-        width: 3%;
-        vertical-align: middle;
-    }
-    header nav ul li{
-        display:  inline-block;
-        margin-left: 75px;
-        vertical-align:top;
-    }
-    img.logo-big3{
-        width: 20%;
-        display: block;
-        margin: auto;
-        align-content: center;
-        background-color: #fff;
-        padding: 10px;
-        border-radius: 300px;
-    }
+nav ul{
+    display: none;
+    list-style-type: none;
+    background-color: #F8F8F8;
+}
+nav input[type=checkbox]:checked + ul{
+    display: flex;
+    flex-flow : column wrap;
+}
+nav ul li{
+    flex: 1 1 auto;
+    text-align: center;
+}
+nav > div > ul > li > a{
+    color: #22435D;
+    font-family: Francois One, Arial;
+    text-transform: uppercase;
+}
+nav a{
+    display: block;
+    text-decoration: none;
+    color: #22435D;
+    padding: 10px 0px;
+}
+nav a:hover{
+    color: #FF0000;
+}
 
-    /*CSS formulaires*/
-    .champ-formulaire{
-        font-family: Didact Gothic, Arial;
-        display: block;
-        margin : auto;
-        padding: 10px 20px 10px 20px;
-        width: 100%;
-    }
-    input{
-        width: 100%;
-        font-family: Didact Gothic, Arial;
-        text-align: center;
-        display: block;
-        margin : auto;
-        padding: 10px;
-        border: none;
-        font-size: 18px;
-        }
-    label{
-        display: block;
-        margin : auto;
-        text-align: center;
-    }
-    input[type=submit]{
-        font-family: Francois One, Arial;
-        font-size: 31px;
-        display: block;
-        margin : auto;
-        background-color: #FF0000;
-        width: 100%;
-        color: #fff;
-        text-transform: uppercase;
-        box-shadow: 5px 5px 0px #22435D;
-    }
-    input[type=submit]:hover{
-        background-color: #22435D;
-        box-shadow: -5px -5px 0px #FF0000;
-    }
 
-    #question{
-        width: 100%;
-        font-family: Didact Gothic, Arial;
-        font-size: 18px;
-        text-align: center;
-        text-align-last: center;
-        display: block;
-        margin : auto;
-        padding: 10px 0 10px 0;
-        border: none;
+img.logo-big3{
+    width: 20%;
+    display: block;
+    margin: auto;
+    align-content: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 300px;
+}
+
+/*CSS formulaires*/
+.champ-formulaire{
+    font-family: Didact Gothic, Arial;
+    display: block;
+    margin : auto;
+    padding: 10px 20px 10px 20px;
+    width: 100%;
+}
+input{
+    width: 100%;
+    font-family: Didact Gothic, Arial;
+    text-align: center;
+    display: block;
+    margin : auto;
+    padding: 10px;
+    border: none;
+    font-size: 18px;
     }
+label{
+    display: block;
+    margin : auto;
+    text-align: center;
+}
+input[type=submit]{
+    font-family: Francois One, Arial;
+    font-size: 31px;
+    display: block;
+    margin : auto;
+    background-color: #FF0000;
+    width: 100%;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 5px 5px 0px #22435D;
+}
+input[type=submit]:hover{
+    background-color: #22435D;
+    box-shadow: -5px -5px 0px #FF0000;
+}
+
+#question{
+    width: 100%;
+    font-family: Didact Gothic, Arial;
+    font-size: 18px;
+    text-align: center;
+    text-align-last: center;
+    display: block;
+    margin : auto;
+    padding: 10px 0 10px 0;
+    border: none;
+}
 
 /*Gestion des tailles d'écran*/
 
@@ -279,6 +309,38 @@ img.logo-big{
     .large{
         width: 100%;
     }
-        
+    .bloc{
+        justify-content:center;
+    }
+    .conteneur-nav{
+        position: static;
+        padding: 30px 0 0 0;
+    }
+    nav label, nav input{
+        display: none;
+    }
+    nav input[type=checkbox]:checked + ul, nav ul{
+        display: flex;
+        flex-flow: row wrap;
+        background-color: #F8F8F8;
+    }
+    nav ul li{
+        position: relative;
+    }
+    nav > div > ul > li > a{
+        color: #22435D;;
+    }
+    nav a{
+        border-bottom: 2px solid transparent;
+    }
+    nav a:hover{
+        color: #FF0000;
+        border-bottom: 2px solid #FF0000;
+    }
+    
+    nav > div > ul li:hover .sous{
+        display: flex;
+        flex-flow: column wrap;
+    }    
 }
 

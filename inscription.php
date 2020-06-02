@@ -10,7 +10,7 @@
     <?php require 'header2.php';?>
     <div id="mega">
         <div>
-        <h1 class="titre">Formulaire à compléter pour valider votre inscription</h1>
+        <h1 class="titre shadow">Formulaire à compléter pour valider votre inscription</h1>
         <p>En créant un compte, vous accèderez à une bibliothèque régulièrement mise à jour comprenant les dernières informations en matière de produits bancaires<br />
         Toute l'information du groupe centralisée accessible en quelques clics !</p>
         </div>
@@ -35,7 +35,7 @@
                 <div class="champ-formulaire">
                 <label for="reponse"><input type="text" name="reponse" id="reponse" placeholder="Votre réponse"></label>
                 </div>
-                <p>Conervez bien votrer question secrète ainsi que sa réponse pour pouvoir récupérer votre mot de passe au besoin.</p>
+                <p>Conservez bien votre question secrète ainsi que sa réponse pour pouvoir récupérer votre mot de passe au besoin.</p>
                 <div class="champ-formulaire"><input type="submit" value="Je m'inscris !" class="bouton rouge"></div>
             </form> 
         </div>

@@ -11,7 +11,7 @@
     
     <div class="mega">
         <div class="gros-conteneur colonne">
-            <h1 class="titre">Votre inscription a bien été enregistrée. Nous vous en remercions</h1>
+            <h1 class="titre shadow">Votre inscription a bien été enregistrée. Nous vous en remercions</h1>
             <p>Vous pouvez désormais vous connecter à l'application dédiée à la recherche des meilleurs produits financiers du groupe. </p>
         </div>
         <div class="gros-conteneur colonne">

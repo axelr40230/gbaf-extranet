@@ -10,7 +10,7 @@
     <?php require 'header2.php';?>
     <div class="mega">
         <div>
-            <h1 class="titre">Récupération du mot de passe</h1>
+            <h1 class="titre shadow">Récupération du mot de passe</h1>
             <p>Répondez à la question secrète et récupérez votre mot de passe<br />
             Accédez de nouveau à votre application dédiée aux produits financiers du groupe GBAF</p>
         </div>
@@ -32,7 +32,7 @@
                 <label for="reponse"><input type="text" name="reponse" id="reponse" placeholder="Votre réponse"></label>
                 </div>
                 <div class="champ-formulaire"><input type="submit" value="valider"></div>
-                </div>
+            </div>
             </form>
             
         <div class="gros-conteneur colonne">
