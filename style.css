@@ -1,0 +1,275 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F8F8F8;
+    }
+header{
+    margin: auto;
+    width: 100%;
+}
+h1, h2, h3{
+    font-family: Didact Gothic, Arial;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 30px 0 30px 0;
+}
+hr{
+    width: 20%;
+    margin: auto;
+}
+p{
+    font-family: Didact Gothic, Arial;
+    font-size: 18px;
+    text-align: center;
+    padding: 50px 0 50px 0;
+    }
+.mega{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    justify-content:flex-end;
+    flex-flow: column wrap;
+    padding: 0 20px 0 20px;
+    
+}
+.bouton{
+    font-family: Francois One, Arial;
+    font-size: 31px;
+    display: block;
+    margin : auto;
+    background-color: #FF0000;
+    color: #FFF;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center; 
+    padding: 10px 30px 10px 30px;
+    box-shadow: 5px 5px 0px #22435D;
+    }
+.bouton:hover{
+    background-color: #22435D;
+    box-shadow: -5px -5px 0px #FF0000;
+}
+.rouge{
+    background-color: #FF0000;
+    color: #FFF;
+    padding: 10px 30px 10px 30px;
+    box-shadow: 5px 5px 0px #22435D;
+}
+.rouge:hover{
+    background-color: #22435D;
+    box-shadow: -5px -5px 0px #FF0000;
+}
+.bleu{
+    background-color: #22435D;
+    color: #FFF;
+    box-shadow: 5px 5px 0px #FF0000;
+}
+.bleu:hover{
+    background-color: #FF0000;
+    box-shadow: -5px -5px 0px #22435D;
+}
+.blanc{
+    background-color: #fff;
+    color: #FF0000;
+    border: solid #FFFFFF 1px;
+}
+.blanc:hover{
+    background-color: #22435D;
+    border: solid #FFFFFF 1px;
+    color: #fff;
+}
+.colonne{
+    flex-flow: column wrap;
+}
+footer{
+    margin: 100px 0 0 0;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    background-color: #22435D;
+    color: #fff;
+}
+
+
+
+/*CSS hommepage*/
+
+#homebody{
+    background-color: #22435D;
+    color: #fff;
+    text-align: center;
+    min-height: 450px;
+    }
+#homehead{
+        padding: 30px 0 0 0;
+        background: linear-gradient(to bottom, #FF0000 50%,#22435D 20%);
+        width: 100%;
+    }
+img.logo-big{
+        display: block;
+        margin: auto;
+        align-content: center;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 300px;
+    }
+
+.gros-conteneur{
+    display: flex;
+    width: 100%;
+    flex-flow: column wrap;
+    
+}
+.titre{
+    width: 100%;
+    
+}
+.bloc{
+    display: flex;
+    margin: 2%;
+    flex-flow: column wrap;
+    
+    
+}
+.contenu{
+    margin: 10px;  
+}
+
+/*CSS pour le header pages inscription et connexion */
+    #content-header2 {
+        padding: 30px 0 0 0;
+        background: linear-gradient(to bottom, #FF0000 50%,#F8F8F8 20%);
+        width: 100%;
+    }
+    img.logo-big2{
+        display: block;
+        margin: auto;
+        align-content: center;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 300px;
+    }
+
+    /* CSS header page produit et profil */
+    #content-header3 {
+        padding: 30px 0 0 0;
+        background: linear-gradient(to bottom, #FF0000 50%,#F8F8F8 20%);
+        width: 100%;
+    }
+    header nav {
+        width: 70%;
+        margin: auto;
+    }
+
+    .menu {
+        font-family: Francois One, Arial;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+    ul li a{
+        color:#fff;
+        text-decoration: none;
+    }
+    img.user{
+        width: 3%;
+        vertical-align: middle;
+    }
+    header nav ul li{
+        display:  inline-block;
+        margin-left: 75px;
+        vertical-align:top;
+    }
+    img.logo-big3{
+        width: 20%;
+        display: block;
+        margin: auto;
+        align-content: center;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 300px;
+    }
+
+    /*CSS formulaires*/
+    .champ-formulaire{
+        font-family: Didact Gothic, Arial;
+        display: block;
+        margin : auto;
+        padding: 10px 20px 10px 20px;
+    }
+    input{
+        width: 100%;
+        font-family: Didact Gothic, Arial;
+        text-align: center;
+        display: block;
+        margin : auto;
+        padding: 10px;
+        border: none;
+        font-size: 18px;
+        }
+    label{
+        display: block;
+        margin : auto;
+        text-align: center;
+    }
+    input[type=submit]{
+        font-family: Francois One, Arial;
+        font-size: 31px;
+        display: block;
+        margin : auto;
+        background-color: #FF0000;
+        width: 100%;
+        color: #fff;
+        text-transform: uppercase;
+        box-shadow: 5px 5px 0px #22435D;
+    }
+    input[type=submit]:hover{
+        background-color: #22435D;
+        box-shadow: -5px -5px 0px #FF0000;
+    }
+
+    #question{
+        width: 100%;
+        font-family: Didact Gothic, Arial;
+        font-size: 18px;
+        text-align: center;
+        text-align-last: center;
+        display: block;
+        margin : auto;
+        padding: 10px 0 10px 0;
+        border: none;
+    }
+
+/*Gestion des tailles d'écran*/
+
+@media screen and (min-width: 780px){
+    .gros-conteneur{
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    .mega{
+        width: 70%;
+        padding: 0 20px 0 20px;
+    }
+    .colonne{
+    flex-flow: column wrap;
+    }
+    .bouton{
+        width: 50%;
+    }
+    input[type=submit]{
+        width: 50%;
+    }
+    .large{
+        width: 100%;
+    }
+        
+}
+
