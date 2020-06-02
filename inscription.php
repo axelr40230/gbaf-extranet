@@ -35,6 +35,7 @@
                 <div class="champ-formulaire">
                 <label for="reponse"><input type="text" name="reponse" id="reponse" placeholder="Votre réponse"></label>
                 </div>
+                <p>Conervez bien votrer question secrète ainsi que sa réponse pour pouvoir récupérer votre mot de passe au besoin.</p>
                 <div class="champ-formulaire"><input type="submit" value="Je m'inscris !" class="bouton rouge"></div>
             </form> 
         </div>

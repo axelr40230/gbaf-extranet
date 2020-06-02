@@ -13,27 +13,25 @@
     
     <div class="mega">
         <div>
-            <h1 class="titre">Bienvenue sur l'application dédiée à la présentation des produits financiers du groupe</h1>
+            <h1 class="titre texte-blanc">Bienvenue sur l'application dédiée à la présentation des produits financiers du groupe</h1>
             <hr>            
         </div>
         
         <div class="gros-conteneur">
             
             <div class="bloc">
-                <p class="contenu">Connectez vous à votre espace</p>
-                <p class="contenu"><a href="connexion.php" class="bouton blanc large">Connexion</a></p>
+                <p class="contenu texte-blanc">Connectez vous à votre espace</p>
+                <p class="contenu texte-blanc"><a href="connexion.php" class="bouton blanc large">Connexion</a></p>
             </div>
             
             <div class="bloc">
-                <p class="contenu">Première visite ? Inscrivez-vous</p>
-                <p class="contenu"><a href="inscription.php" class="bouton blanc large">Inscription</a></p>
+                <p class="contenu texte-blanc">Première visite ? Inscrivez-vous</p>
+                <p class="contenu texte-blanc"><a href="inscription.php" class="bouton blanc large">Inscription</a></p>
             </div>
             
         </div> 
         
-        <footer>
-        <p>Copyright | Mentions légales</p>
-    </footer>
+        <?php require 'footer.php';?>
     </div>
     
     

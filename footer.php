@@ -1,2 +1,2 @@
 <link rel="stylesheet" href="style.css">
-<footer><p>Copyright | Mentions légales</p></footer>
+<footer><p class="texte-blanc">Copyright | <a href="#" class="texte-blanc">Mentions légales</a></p></footer>

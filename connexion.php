@@ -20,14 +20,15 @@
                 <div class="champ-formulaire"><label for="user"><input type="text" name="user" id="user" placeholder="Votre nom d'utilisateur"></label></div>
                 <div class="champ-formulaire"><label for="pass"><input type="password" name="pass" id="pass" placeholder="Votre mot de passe"></label></div>
                 <div class="champ-formulaire"><label for="souvenir">Se souvenir de moi<input type="checkbox" name="souvenir"></label></div>
-                <div class="champ-formulaire"><input type="submit" value="Se connecter"></div>
+                <div class="champ-formulaire"><input type="submit" value="Je me connecte !"></div>
                 </div>
+                <p><a href="oubli-pass.php">Mot de passe oublié ?</a></p>
             </form>
             
         <div class="gros-conteneur colonne">
             
             <p>Première visite ? Inscrivez-vous</p>
-            <p><a href="inscription.php" class="bouton bleu">S'inscrire</a></p>
+            <p><a href="inscription.php" class="bouton bleu">Je m'inscris !</a></p>
         </div>
         </div>
     </div>
