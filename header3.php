@@ -3,7 +3,7 @@
     <nav>
   <div class="conteneur-nav">
     
-  <label for="mobile"><img src="images/menu.svg" width="50" height="50"></label>
+  <label for="mobile"><img src="images/menu.svg" width="20" height="20"></label>
   <input type="checkbox" id="mobile" role="button">
     <ul>
       <li><a href="#">Produits</a></li>

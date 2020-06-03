@@ -1,7 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
 
-/* Conception mobile first */
+/* CSS PC */
+
+ /* CSS globale */
 * {
     margin: 0;
     padding: 0;
@@ -38,6 +40,9 @@ p{
     text-align: center;
     padding: 50px 0 50px 0;
     color: #22435D;
+    }
+.contenu{
+        margin: 10px;
     }
 .bouton{
     width: 100%;
@@ -95,7 +100,8 @@ p{
     text-shadow: -3px -3px 0px #D9D9D9;
 }
 .colonne{
-    flex-flow: column wrap;
+     width: 100%;
+        flex-flow: row wrap;
     }
 .titre{
     width: 100%;
@@ -121,11 +127,11 @@ footer{
     justify-content:flex-end;
     flex-flow: column wrap;
     padding: 0 20px 0 20px;
-    width: 100%;
+    width: 70%;
     }
 .bloc{
     display: flex;
-    margin: 2%;
+    margin: 10px;
     flex-flow: column wrap;
     justify-content: center;
     }
@@ -134,7 +140,7 @@ footer{
     padding: 30px 0 0 0;
     }
    
-/*CSS globale homepage*/
+/*CSS globale homepage PC */
 
 #homebody{
     background-color: #22435D;
@@ -155,7 +161,7 @@ img.logo-big{
     padding: 10px;
     border-radius: 300px;
     }
-/*CSS pour le header pages inscription et connexion */
+/* CSS pour le header pages inscription et connexion PC */
 #content-header2 {
     padding: 30px 0 0 0;
     background: linear-gradient(to bottom, #FF0000 50%,#F8F8F8 20%);
@@ -191,35 +197,10 @@ img.logo-big3{
     border-radius: 300px;
 }
 
-/* CSS navigation */
-nav{
-    width: 60%;
-    margin: 0 auto;
-    background-color: #FF0000;
-    position: sticky;
-    top: 0px;
-    align-self:baseline;
+/* CSS navigation PC */
+    .conteneur-nav{
+        position: static;
     }
-.conteneur-nav{
-    position: absolute;
-    width: 100%;
-    
-}
-nav input[type=checkbox]{
-        display: none;
-    }
-nav label{
-    display: inline-block;
-    width: 100%;
-    padding: 30px 0px;
-    text-align: center;
-    background-color: #FF0000;
-    }
-nav ul{
-    display: none;
-    list-style-type: none;
-    background-color: #FF0000;
-}
 nav > div > ul > li > a{
     color: #fff;
     font-family: Oxygen, Arial;
@@ -228,26 +209,33 @@ nav > div > ul > li > a{
     font-size: 20px;
     text-decoration: none;
         }
- 
-    nav input[type=checkbox]:checked + ul{
-        display: flex;
-        flex-flow : column wrap;
+    nav label, nav input{
+        display: none;
     }
+    nav input[type=checkbox]:checked + ul, nav ul{
+        display: flex;
+        flex-flow: row wrap;
+        }
     nav ul li{
-        flex: 1 1 auto;
-        text-align: center;
-    } 
-nav a{
-    display: block;
-    padding: 10px 0px;
-        }
-    nav a:hover{
-    color: #22435D;
-        }
+        position: relative;
+    }
+    nav{
+    width: 60%;
+    justify-content: flex-end;
+    align-self:center;
+    }
+      nav label{
+        display: none;
+    }
+    
+    nav ul{
+    justify-content: space-around;
+    width: 100%;
+    list-style-type: none;
+    }
 
 
-
-/*CSS formulaires*/
+/*CSS formulaires PC*/
 form{
     width: 100%;
 }
@@ -256,7 +244,7 @@ form{
     display: block;
     margin : auto;
     padding: 10px 20px 10px 20px;
-    width: 70%;
+    width: 100%;
 }
 input{
     width: 100%;
@@ -304,57 +292,72 @@ input[type=submit]:hover{
     border: none;
 }
 
-/* Conception PC */
-@media screen and (min-width: 993px){
-   .mega{
-        width: 70%;
+/* CSS SMARTPHONE */
+
+@media screen and (min-width: 200px) and (max-width: 480px){
+
+
+    
+/* CSS globale smartphone */
+    .mega{
+        width: 100%;
     }
     .colonne{
-        width: 100%;
-        flex-flow: row wrap;        
-    }
-    .contenu{
-        margin: 10px;
-    }
-    .bloc{
         flex-flow: column wrap;
     }
     
-    input[type=submit]{
-        width: 100%;
+/* CSS navigation smartphone */
+nav{
+    width: 30%;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0.00);
+    position: sticky;
+    top: 0px;
+    align-self:baseline;
     }
-    
-    /*CSS navigation*/
-    .conteneur-nav{
-        position: static;
-    }
-    nav label, nav input{
-        display: none;
-    }
-    nav input[type=checkbox]:checked + ul, nav ul{
-        display: flex;
-        flex-flow: row wrap;
+    nav > div > ul > li > a{
+    font-weight: 300;
+    font-size: 12px;
         }
-    nav ul li{
-        position: relative;
-    }
-    nav{
-    width: 60%;
-    justify-content: flex-end;
-    align-self:center;
-    }
-      nav label{
-        display: none;
-    }
-    
-    nav ul{
-    justify-content: space-around;
+.conteneur-nav{
+    position: absolute;
     width: 100%;
-    }
     
 }
-/* Conception tablette */
-@media screen and (min-width: 559px) and (max-width: 992px){
+nav input[type=checkbox]{
+        display: none;
+    }
+nav label{
+    display: inline-block;
+    width: 50%;
+    padding: 0;
+    text-align: center;
+    background-color: rgba(0,0,0,0.00);
+    }
+nav ul{
+    display: none;
+    background-color: #FF0000;
+}
+    nav input[type=checkbox]:checked + ul{
+        display: flex;
+        flex-flow : column wrap;
+    }
+    nav ul li{
+        flex: 1 1 auto;
+        text-align: center;
+    } 
+nav a{
+    display: block;
+    padding: 10px 0px;
+            }
+    nav a:hover{
+    color: #22435D;
+        }
+
+}
+/* CSS TABLETTE */
+
+@media screen and (min-width: 481px) and (max-width: 992px){
     .mega{
         width: 100%;
         }
@@ -375,5 +378,52 @@ input[type=submit]:hover{
         width: 100%;
     }
     
+    /* CSS navigation tablette */
+    nav{
+    width: 30%;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0.00);
+    position: sticky;
+    top: 0px;
+    align-self:baseline;
+    }
+    nav > div > ul > li > a{
+    font-weight: 300;
+    font-size: 12px;
+        }
+.conteneur-nav{
+    position: absolute;
+    width: 100%;
+    
 }
-
+nav input[type=checkbox]{
+        display: none;
+    }
+nav label{
+    display: inline-block;
+    width: 50%;
+    padding: 0;
+    text-align: center;
+    background-color: rgba(0,0,0,0.00);
+    }
+nav ul{
+    display: none;
+    background-color: #FF0000;
+}
+    nav input[type=checkbox]:checked + ul{
+        display: flex;
+        flex-flow : column wrap;
+    }
+    nav ul li{
+        flex: 1 1 auto;
+        text-align: center;
+    } 
+nav a{
+    display: block;
+    padding: 10px 0px;
+            }
+    nav a:hover{
+    color: #22435D;
+        }
+    
+}
