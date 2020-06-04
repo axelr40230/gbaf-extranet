@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width" />
+<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
 <link rel="stylesheet" href="style.css">
 <title>Récupération du mot de passe</title>
 </head>
@@ -20,7 +21,7 @@
                 <div class="champ-formulaire"><label for="user"><input type="text" name="user" id="user" placeholder="Votre nom d'utilisateur"></label></div>
                                 <div class="champ-formulaire">
                     <label for="question"></label>
-                        <select name="question" id="question">
+                        <select name="question" id="question" class="question">
                             <option value="">Sélectionnez votre question secrète</option>
                             <option value="animal">Quel est le nom de votre premier animal de compagnie ?</option>
                             <option value="prenom">Comment s'appelle votre mère ?</option>

@@ -2,7 +2,8 @@
 <html>
 <head>
 <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width" />
+<meta name="viewport" content="width=device-width" />
+<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
 <link rel="stylesheet" href="style.css">
 <title>Confirmation d'inscription</title>
 </head>

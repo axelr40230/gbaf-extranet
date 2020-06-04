@@ -27,6 +27,15 @@ h1, h2, h3{
     color: #22435D;
     text-shadow: -5px -5px 0px #091F30;
 }
+h2{
+    background-color: #22435D;
+    color: #fff;
+    width: 100%;
+}
+.detail-produit{
+    background-color: #22435D;
+    color: #fff;
+}
 hr{
     width: 20%;
     margin: auto;
@@ -38,11 +47,12 @@ p{
     font-family: Quicksand, Arial;
     font-size: 18px;
     text-align: center;
-    padding: 50px 0 50px 0;
     color: #22435D;
     }
 .contenu{
         margin: 10px;
+    display: flex;
+    flex-flow: row wrap;
     }
 .bouton{
     width: 100%;
@@ -96,6 +106,9 @@ p{
 .texte-blanc{
     color: #fff;
         }
+.texte-rouge{
+    color: #FF0000;
+        }
 .shadow{
     text-shadow: -3px -3px 0px #D9D9D9;
 }
@@ -139,6 +152,19 @@ footer{
     position: static;
     padding: 30px 0 0 0;
     }
+.listing{
+    font-family: Quicksand, Arial;
+    font-size: 18px;
+    text-align: left;
+    margin: 0 0 0 50px;
+    color: #22435D;
+}
+.produit{
+    font-family: Quicksand, Arial;
+    font-size: 18px;
+    text-align: left;
+    color: #22435D;
+}
    
 /*CSS globale homepage PC */
 
@@ -182,13 +208,12 @@ img.logo-big2{
     padding: 30px 0 30px 10px;
     background-color: #FF0000;
     width: 100%;
-    border-bottom: solid #22435D 20px;
+    border-bottom: solid #22435D 10px;
 }
 .logo{
     width: 30%;
 }
 img.logo-big3{
-    width: 20%;
     display: block;
     margin: auto;
     align-content: center;
@@ -280,7 +305,7 @@ input[type=submit]:hover{
 .large{
     width: 100%;
     }
-#question{
+.question{
     width: 100%;
     font-family: Quicksand, Arial;
     font-size: 18px;
@@ -299,29 +324,76 @@ input[type=submit]:hover{
 
     
 /* CSS globale smartphone */
+    h1, h2, h3{
+        font-size:14px;
+    }
+    p, a{
+        font-size: 12px;
+    }
     .mega{
         width: 100%;
+    }
+    .gros-conteneur{
+        width: 100%;
+        flex-flow: row wrap;
+        justify-content: space-around;
     }
     .colonne{
         flex-flow: column wrap;
     }
+    .contenu{
+        margin: 10px;
+    }
+    .bouton{
+        font-size:12px;
+    }
+    .bloc{
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    input{
+        width: 100%;
+        font-size: 12px;
+    }
+    input[type=submit]{
+        width: 100%;
+         font-size: 12px;
+    }
+    .question{
+        font-size: 12px;
+    }
+    img.logo-big{
+        width: 150px;
+        height:150px;
+    }
+    img.logo-big3{
+        width: 75px;
+        height:75px;
+    }
     
+    .illustration{
+        width: 100%;
+    }
 /* CSS navigation smartphone */
+    
 nav{
-    width: 30%;
+    width: 50%;
     margin: 0 auto;
     background-color: rgba(0,0,0,0.00);
-    position: sticky;
-    top: 0px;
     align-self:baseline;
     }
     nav > div > ul > li > a{
     font-weight: 300;
     font-size: 12px;
+        text-align: left;
         }
+    .logo{
+        width: 40%;
+    }
 .conteneur-nav{
     position: absolute;
-    width: 100%;
+    width: 40%;
     
 }
 nav input[type=checkbox]{
@@ -337,6 +409,7 @@ nav label{
 nav ul{
     display: none;
     background-color: #FF0000;
+    padding: 10px;
 }
     nav input[type=checkbox]:checked + ul{
         display: flex;
@@ -344,7 +417,7 @@ nav ul{
     }
     nav ul li{
         flex: 1 1 auto;
-        text-align: center;
+        text-align:left;
     } 
 nav a{
     display: block;
@@ -358,10 +431,17 @@ nav a{
 /* CSS TABLETTE */
 
 @media screen and (min-width: 481px) and (max-width: 992px){
+     h1, h2, h3{
+        font-size:14px;
+    }
+    p, a{
+        font-size: 12px;
+    }
     .mega{
         width: 100%;
         }
     .gros-conteneur{
+        width: 100%;
         flex-flow: row wrap;
         justify-content: space-around;
     }
@@ -371,29 +451,48 @@ nav a{
     .contenu{
         margin: 10px;
     }
+    .bouton{
+        font-size:12px;
+    }
     .bloc{
         flex-flow: column wrap;
     }
     input[type=submit]{
         width: 100%;
+         font-size: 12px;
     }
-    
+    input{
+        width: 100%;
+         font-size: 12px;
+    }
+    .question{
+        font-size: 12px;
+    }
+    img.logo-big3{
+        width: 75px;
+        height:75px;
+    }
+    .illustration{
+        width: 100%;
+    }
     /* CSS navigation tablette */
     nav{
-    width: 30%;
+    width: 50%;
     margin: 0 auto;
     background-color: rgba(0,0,0,0.00);
-    position: sticky;
-    top: 0px;
     align-self:baseline;
+    }
+    .logo{
+        width: 40%;
     }
     nav > div > ul > li > a{
     font-weight: 300;
     font-size: 12px;
+        text-align: left;
         }
 .conteneur-nav{
     position: absolute;
-    width: 100%;
+    width: 40%;
     
 }
 nav input[type=checkbox]{
@@ -409,6 +508,7 @@ nav label{
 nav ul{
     display: none;
     background-color: #FF0000;
+    padding: 10px;
 }
     nav input[type=checkbox]:checked + ul{
         display: flex;
