@@ -11,7 +11,7 @@
 <body>
     <?php require 'header3.php';?>
     <div class="mega">
-        <div>
+        <div  class="gros-conteneur">
             <h1 class="titre texte-rouge shadow">GBAF extranet regroupement d'informations sur les différents produits financiers</h1>
             <hr>            
         </div>
@@ -23,15 +23,15 @@ Sa mission est de promouvoir l'activité bancaire à l’échelle nationale. C�
             </div>
             <div class="bloc">
                 <h2>Formation&amp;Co</h2>
-                <p><img src="images/formation_co.png" width="100%" alt="Banque numérique" class="illustration"><br /><br /></p>
-                <p>Formation&amp;co est une association française présente sur tout le territoire.<br /><br />
-Nous proposons à des personnes issues de tout milieu de devenir entrepreneur grâce à un crédit et un accompagnement professionnel et personnalisé.</p>
+                <div><img src="images/formation_co.png" alt="Banque numérique" class="illustration"></div>
+                <div><p class="produit">Formation&amp;co est une association française présente sur tout le territoire.<br /><br />
+Nous proposons à des personnes issues de tout milieu de devenir entrepreneur grâce à un crédit et un accompagnement professionnel et personnalisé.</p></div>
             </div>
             <div class="bloc">
-                <p><a href="detail-produit.php" class="bouton">Lire la suite</a></p>
+                <p class="produit"><a href="detail-produit.php" class="bouton"><img src="images/book.svg" width="20" height="20" alt="Lire la suite" style="vertical-align:middle;"><span style="margin-left: 20px;">Lire la suite</span></a></p>
             </div>
             <div class="bloc">
-                <p><a href="detail-produit.php" class="bouton bleu">Télécharger le logo</a></p>
+                <p class="produit"><a href="detail-produit.php" class="bouton bleu"><img src="images/download.svg" width="20" height="20" alt="Télécharger le logo" style="vertical-align:middle;"><span style="margin-left: 20px;">Télécharger le logo</span></a></p>
             </div>
         </div>
     </div>

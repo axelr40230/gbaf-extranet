@@ -22,7 +22,7 @@
                 Nous proposons à des personnes issues de tout milieu de devenir entrepreneur grâce à un crédit et un accompagnement professionnel et personnalisé.<br />
                 Notre proposition : <br /><br /></p>
                     <ul>
-                        <li class="listing">un financement jusqu’à 30 000€ ;</li>
+                        <li class="listing">un financement jusqu’à 30000€ ;</li>
                         <li class="listing">un suivi personnalisé et gratuit ;</li>
                         <li class="listing">une lutte acharnée contre les freins sociétaux et les stéréotypes.</li>
                     </ul>

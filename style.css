@@ -32,6 +32,15 @@ h2{
     color: #fff;
     width: 100%;
 }
+h1.titre-profil{
+    background-color: #22435D;
+    color: #fff;
+    width: 100%;
+}
+h2.titre-profil2{
+    background-color:rgba(0,0,0,0.00);
+    color: #22435D;
+}
 .detail-produit{
     background-color: #22435D;
     color: #fff;
@@ -48,16 +57,17 @@ p{
     font-size: 18px;
     text-align: center;
     color: #22435D;
+    padding: 30px 0 30px 0;
     }
 .contenu{
-        margin: 10px;
-    display: flex;
-    flex-flow: row wrap;
+    margin: 10px;
+    
+    padding: 10px 0 10px 0;
     }
 .bouton{
     width: 100%;
     font-family: Oxygen, Arial;
-    font-size: 31px;
+    font-size: 18px;
     display: block;
     margin : auto;
     background-color: #FF0000;
@@ -143,7 +153,7 @@ footer{
     width: 70%;
     }
 .bloc{
-    display: flex;
+    
     margin: 10px;
     flex-flow: column wrap;
     justify-content: center;
@@ -152,19 +162,21 @@ footer{
     position: static;
     padding: 30px 0 0 0;
     }
-.listing{
+li.listing{
     font-family: Quicksand, Arial;
     font-size: 18px;
     text-align: left;
     margin: 0 0 0 50px;
     color: #22435D;
+    
 }
-.produit{
+p.produit{
     font-family: Quicksand, Arial;
     font-size: 18px;
     text-align: left;
     color: #22435D;
 }
+
    
 /*CSS globale homepage PC */
 
@@ -289,7 +301,7 @@ label{
 }
 input[type=submit]{
     font-family: Oxygen, Arial;
-    font-size: 31px;
+    font-size: 18px;
     display: block;
     margin : auto;
     background-color: #FF0000;
@@ -316,6 +328,12 @@ input[type=submit]:hover{
     padding: 10px 0 10px 0;
     border: none;
 }
+img.illustration{
+        width: 100%;
+        height: 100%;
+        margin : 0 auto;
+        align-items: center;
+    }
 
 /* CSS SMARTPHONE */
 
@@ -345,6 +363,7 @@ input[type=submit]:hover{
         margin: 10px;
     }
     .bouton{
+        width: 100%;
         font-size:12px;
     }
     .bloc{
@@ -372,9 +391,8 @@ input[type=submit]:hover{
         height:75px;
     }
     
-    .illustration{
-        width: 100%;
-    }
+    
+   
 /* CSS navigation smartphone */
     
 nav{
@@ -452,6 +470,7 @@ nav a{
         margin: 10px;
     }
     .bouton{
+        width: 100%;
         font-size:12px;
     }
     .bloc{

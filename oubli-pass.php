@@ -34,8 +34,8 @@
                 <label for="reponse"><input type="text" name="reponse" id="reponse" placeholder="Votre réponse"></label>
                 </div>
                 <div class="champ-formulaire"><input type="submit" value="valider"></div>
-            </div>
-            </form>
+            </form></div>
+            
             
         <div class="gros-conteneur colonne">
             
@@ -43,7 +43,7 @@
             <p><a href="inscription.php" class="bouton bleu">Je m'inscris !</a></p>
         </div>
         </div>
-    </div>
+    
     <?php require 'footer.php';?>
 </body>
 </html>
