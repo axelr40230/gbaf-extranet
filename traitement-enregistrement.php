@@ -14,15 +14,15 @@ if (!empty($_POST['nom']) AND !empty($_POST['prenom']) AND !empty($_POST['user']
         $req = $db -> query("SELECT user FROM gbaf20_membres WHERE user = '$user'");
             $count = $req->rowCount();
             if($count == 0){
-                $req = $db->prepare("INSERT INTO gbaf20_membres(nom, prenom, user, pass, question, reponse) VALUES(:nom, :prenom, :user, :pass, :question, :reponse)");
+                $req = $db->prepare("INSERT INTO gbaf20_membres(nom, prenom, user, pass, question, reponse) VALUES(:nom, :prenom, :user, :pass, :question, :reponse)") or die('error '.var_dump($req->errorInfo()));;
                     $req->execute(array(
-                    ':nom' => $nom,
-                    ':prenom' => $prenom,
-                    ':user' => $user,
-                    ':pass' => $pass,
-                    ':question' => $question,
-                    ':reponse' => $reponse
-                    ));
+                    'nom' => $nom,
+                    'prenom' => $prenom,
+                    'user' => $user,
+                    'pass' => $pass,
+                    'question' => $question,
+                    'reponse' => $reponse
+                    ))or die('error '.var_dump($req->errorInfo()));;
                     header('Location: confirmation-inscription.php');
             }
         else{
