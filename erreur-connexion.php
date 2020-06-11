@@ -19,7 +19,7 @@
         <div class="gros-conteneur colonne">
             <form action="traitement-connexion.php" method="post">
                 <div class="champ-formulaire">
-                    <p><?php echo 'Mauvais identifiant ou mot de passe !<br/>Merci de recommencer';?></p>
+                    <p class="texte-rouge"><?php echo 'Mauvais identifiant ou mot de passe !<br/>Merci de recommencer';?></p>
                 <div class="champ-formulaire"><label for="user"><input type="text" name="user" id="user" placeholder="Votre nom d'utilisateur"></label></div>
                 <div class="champ-formulaire"><label for="pass"><input type="password" name="pass" id="pass" placeholder="Votre mot de passe"></label><br/><br/></div>
                 <div class="champ-formulaire"><label for="souvenir">Se souvenir de moi<br/><br/><input type="checkbox" name="souvenir"><br/><br/><br/></label></div>

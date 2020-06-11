@@ -9,7 +9,7 @@
         $resultat = $req->fetch();
         $isPasswordCorrect = password_verify($_POST['pass'], $resultat['pass']);
             if (!$resultat){
-                echo 'Mauvais identifiant ou mot de passe !';
+                require 'erreur-connexion.php';
             }
         else{
             session_start();
