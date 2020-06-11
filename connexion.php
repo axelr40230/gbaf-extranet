@@ -9,7 +9,17 @@
         $resultat = $req->fetch();
         $isPasswordCorrect = password_verify($_POST['pass'], $resultat['pass']);
             if (!$resultat){
-                require 'erreur-connexion.php';
+                if (isset($_GET['erreur'])){
+                    $message = 'alerte';
+   
+                    require 'formulaire-connexion.php?erreur='.$message.'';
+                }
+                else{
+                   session_start();
+                $_SESSION['id'] = $resultat['id'];
+                $_SESSION['user'] = $user;
+                Header('Location: produits.php'); 
+                }                
             }
         else{
             session_start();

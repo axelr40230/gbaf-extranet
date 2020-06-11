@@ -8,7 +8,8 @@ if (isset($_POST['user']) AND isset($_POST['pass'])){
     $req = $db -> query("SELECT user FROM gbaf20_membres WHERE user = '$user'");
             $count = $req->rowCount();
             if($count == 0){
-                header('Location: erreur-connexion.php');
+                $message = 'alerte';
+                header('Location: connexion.php?erreur='.$message.'');
             }
             else{
             //  Récupération de l'utilisateur et de son pass hashé
@@ -20,7 +21,8 @@ if (isset($_POST['user']) AND isset($_POST['pass'])){
             // Comparaison du pass envoyé via le formulaire avec la base
             $isPasswordCorrect = password_verify($_POST['pass'], $resultat['pass']);
                 if (!$resultat){
-                    header('Location: erreur-connexion.php');
+                    $message = 'alerte';
+                    header('Location: connexion.php?erreur='.$message.'');
                 }
                 else{
                     if ($isPasswordCorrect){
@@ -34,12 +36,13 @@ if (isset($_POST['user']) AND isset($_POST['pass'])){
                         }
                     }
                     else{
-                        header('Location: erreur-connexion.php');
+                        header('Location: produits.php');
                     }
                 }
     }
 }
 else{
-    header('Location: erreur-connexion.php');
+    $message = 'alerte';
+    header('Location: connexion.php?erreur='.$message.'');
 }
 ?>
