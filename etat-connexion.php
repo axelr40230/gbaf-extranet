@@ -8,7 +8,5 @@ session_start();
         $message = 'Bienvenue dans votre espace dédié '.$user.'';
         echo $message;
     }
-else{
-    header('location:connexion.php');
-}
+
 ?>
