@@ -17,7 +17,8 @@
         Toute l'information du groupe centralisée accessible en quelques clics !</p>
         </div>
         <div class="gros-conteneur">
-            <form action="traitement-enregistrement.php" method="post">
+            <form action="" method="post">
+                <p class="texte-rouge"><?php require 'traitement-enregistrement.php';?></p>
                 <div class="champ-formulaire"><label for="nom"><input type="text" name="nom" id="nom" placeholder="Votre nom"></label></div>
                 <div class="champ-formulaire"><label for="prenom"><input type="text" name="prenom" id="prenom" placeholder="Votre prénom"></label></div>
                 <div class="champ-formulaire"><label for="user"><input type="text" name="user" id="user" placeholder="Votre nom d'utilisateur"></label></div>
@@ -38,7 +39,8 @@
                 <label for="reponse"><input type="text" name="reponse" id="reponse" placeholder="Votre réponse"></label>
                 </div>
                 <p class="contenu">Conservez bien votre question secrète ainsi que sa réponse pour pouvoir récupérer votre mot de passe au besoin.</p>
-                <div class="champ-formulaire"><input type="submit" value="Je m'inscris !" class="bouton rouge"></div>
+                <div class="champ-formulaire"><input type="submit" value="Je m'inscris !" class="bouton rouge" name="valider"></div>
+                
             </form> 
         </div>
     </div>

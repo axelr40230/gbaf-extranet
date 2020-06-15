@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="style.css">
 <title>Accès Extranet GBAF</title>
 </head>
-
+<?php require 'etat-connexion.php';?>
 <body  id="homebody">
     
     <?php require 'header1.php';?>
