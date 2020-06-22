@@ -12,35 +12,25 @@
     <?php require 'header3.php';?>
     <div class="mega">
         <div>
-            <?php
-            require 'db.php';
-            if (isset($_GET['id'])){
-                $id = (int) $_GET['id']; 
-                $req = $db->query ("SELECT * FROM gbaf20_produits WHERE id = '$id'");
-                while ($donnees = $req->fetch())
-                {
-            
-            ?>
-            <p><img src="<?php echo ($donnees['logo']); ?>" width="100%" alt="Banque numérique" class="illustration"><br /><br /></p>
+            <p><img src="images/formation_co.png" width="100%" alt="Banque numérique" class="illustration"><br /><br /></p>
             
         </div>
         <div>
-            <h1 class="titre detail-produit"><?php echo htmlspecialchars($donnees['nom_produit']); ?></h1>
+            <h1 class="titre detail-produit">Formation&amp;Co</h1>
             <div>
-                <p class="produit"><?php echo $donnees['description_produit']; ?></p>
-                 </div>
-        </div>
-        <?php
-                }
-}
-            
-$req->closeCursor();
-?>
-                
+                <p class="produit">Formation&amp;co est une association française présente sur tout le territoire.
+                Nous proposons à des personnes issues de tout milieu de devenir entrepreneur grâce à un crédit et un accompagnement professionnel et personnalisé.<br />
+                Notre proposition : <br /><br /></p>
+                    <ul>
+                        <li class="listing">un financement jusqu’à 30000€ ;</li>
+                        <li class="listing">un suivi personnalisé et gratuit ;</li>
+                        <li class="listing">une lutte acharnée contre les freins sociétaux et les stéréotypes.</li>
+                    </ul>
+                    <p class="produit">Le financement est possible, peu importe le métier : coiffeur, banquier, éleveur de chèvres… . Nous collaborons avec des personnes talentueuses et motivées.<br /><br />
+                    Vous n’avez pas de diplômes ? Ce n’est pas un problème pour nous ! Nos financements s’adressent à tous.</p>
 
-           <div class="bloc">
-                <p class="produit"><a href="produits.php" class="bouton"><img src="images/book.svg" width="20" height="20" alt="Retour aux produits" style="vertical-align:middle;"><span style="margin-left: 20px;">Retour aux produits</span></a></p>
             </div>
+        </div>
     </div>
     <?php require 'footer.php';?>
 </body>

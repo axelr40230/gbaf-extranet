@@ -17,8 +17,7 @@
         Toute l'information du groupe centralisée accessible en quelques clics !</p>
         </div>
         <div class="gros-conteneur">
-            <form action="" method="post">
-                <p class="texte-rouge"><?php require 'traitement-enregistrement.php';?></p>
+            <form action="confirmation-inscription.php" method="post">
                 <div class="champ-formulaire"><label for="nom"><input type="text" name="nom" id="nom" placeholder="Votre nom"></label></div>
                 <div class="champ-formulaire"><label for="prenom"><input type="text" name="prenom" id="prenom" placeholder="Votre prénom"></label></div>
                 <div class="champ-formulaire"><label for="user"><input type="text" name="user" id="user" placeholder="Votre nom d'utilisateur"></label></div>
@@ -28,10 +27,10 @@
                     <label for="question"></label>
                         <select name="question" id="question" class="question">
                             <option value="">Sélectionnez votre question secrète</option>
-                            <option value="Quel est le nom de votre premier animal de compagnie ?">Quel est le nom de votre premier animal de compagnie ?</option>
-                            <option value="Comment s'appelle votre mère ?">Comment s'appelle votre mère ?</option>
-                            <option value="Où êtes-vous né.e ?">Où êtes-vous né.e ?</option>
-                            <option value="Quelle est votre couleur préférée ?">Quelle est votre couleur préférée ?</option>
+                            <option value="animal">Quel est le nom de votre premier animal de compagnie ?</option>
+                            <option value="prenom">Comment s'appelle votre mère ?</option>
+                            <option value="naissance">Où êtes-vous né.e ?</option>
+                            <option value="couleur">Quelle est votre couleur préférée ?</option>
                         </select>
                 </div>
                 
@@ -39,8 +38,7 @@
                 <label for="reponse"><input type="text" name="reponse" id="reponse" placeholder="Votre réponse"></label>
                 </div>
                 <p class="contenu">Conservez bien votre question secrète ainsi que sa réponse pour pouvoir récupérer votre mot de passe au besoin.</p>
-                <div class="champ-formulaire"><input type="submit" value="Je m'inscris !" class="bouton rouge" name="valider"></div>
-                
+                <div class="champ-formulaire"><input type="submit" value="Je m'inscris !" class="bouton rouge"></div>
             </form> 
         </div>
     </div>

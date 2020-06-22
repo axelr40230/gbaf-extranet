@@ -8,7 +8,7 @@
     <ul>
       <li><a href="produits.php">Produits</a></li>
       <li><a href="profil.php">Mon profil</a></li>
-      <li><a href="traitement-deconnexion.php">Me déconnecter</a></li>
+      <li><a href="connexion.php">Me déconnecter</a></li>
     </ul>
   </div>
 </nav>
