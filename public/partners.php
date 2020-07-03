@@ -46,7 +46,7 @@ while ($donnees = $req->fetch())
                 <p class="product"><a href="../src/php/download.php?id=<?=$id?>" class="button blue">Télécharger le logo</a></p>
             </div>
             <div class="block">
-                <p class="product"><a href="information.php?id=<?=$id?>" class="button">Lire la suite</a></p>
+                <p class="product"><a href="information.php?id=<?=$id?>&page=1" class="button">Lire la suite</a></p>
             </div>
             
             

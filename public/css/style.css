@@ -202,7 +202,39 @@ p.product{
     text-align: left;
     color: #22435D;
 }
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
 
+ul.pagination li {
+    display: inline;
+    color: #22435D;
+    font-family: Quicksand, Arial;
+    font-size: 18px;
+    padding: 8px 16px;
+    text-decoration: none;
+    transform: scale(1);
+    transition: transform 400ms;
+    
+}
+
+ul.pagination li a {
+    color: #22435D;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    background-color: #FFF;
+}
+ul.pagination li a:hover{
+    color: #FFF;
+    background-color: #FF0000;
+    transform: scale(1.15);
+}
+div.center {
+    text-align: center;
+}
    
 /*CSS globale homepage PC */
 
