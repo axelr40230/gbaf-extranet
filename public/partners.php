@@ -43,12 +43,13 @@ while ($donnees = $req->fetch())
                 <div><p class="product"><?php echo substr($donnees['description_produit'],0, 200).'...'; ?></p></div>
             </div>
             <div class="block">
-                <p class="product"><a href="information.php?id=<?=$id?>" class="button"><img src="images/book.svg" width="20" height="20" alt="Lire la suite" style="vertical-align:middle;"><span style="margin-left: 20px;">Lire la suite</span></a></p>
+                <p class="product"><a href="../src/php/download.php?id=<?=$id?>" class="button blue">Télécharger le logo</a></p>
             </div>
             <div class="block">
-                <p class="product"><a href="../src/php/download.php?id=<?=$id?>" class="button blue"><img src="images/download.svg" width="20" height="20" alt="Télécharger le logo" style="vertical-align:middle;"><span style="margin-left: 20px;">Télécharger le logo</span></a></p>
+                <p class="product"><a href="information.php?id=<?=$id?>" class="button">Lire la suite</a></p>
             </div>
-
+            
+            
     
             
 <?php

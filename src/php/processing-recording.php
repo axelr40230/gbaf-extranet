@@ -1,5 +1,5 @@
 <?php
-    require 'db.php'; // connexion à la base de données
+    
 
 if (isset($_POST['valider'])){
     if (!empty($_POST['nom']) AND !empty($_POST['prenom']) AND !empty($_POST['user']) AND !empty($_POST['pass']) AND !empty($_POST['pass-confirm']) AND !empty($_POST['question']) AND !empty($_POST['reponse'])){
