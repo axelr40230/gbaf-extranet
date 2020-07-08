@@ -13,20 +13,12 @@
             
         </div>
         <div>
-            <h1 class="title product-detail"><?php echo htmlspecialchars($donnees['nom_produit']); ?></h1>
+            <h1 class="title product-detail"  id="vote-section"><?php echo htmlspecialchars($donnees['nom_produit']); ?></h1>
             <div>
                 <p class="product"><?php echo $donnees['description_produit']; ?></p>
                  </div>
         </div>
-        <div class="big-container">   
-
-           <div class="block">
-                <p class="product"><a href="partners.php" class="button">Retour aux Partenaires</a></p>
-            </div>
-        <div class="block">
-                <p class="product"><a href="information.php?id=<?=$id_following?>" class="button">Partenaire suivant</a></p>
-            </div>
-    </div>
+        
 <?php
                 }
                 else

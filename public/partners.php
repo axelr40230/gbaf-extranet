@@ -9,6 +9,7 @@ session_start();
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width" />
 <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+<script src="https://kit.fontawesome.com/a98611f8ee.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="css/style.css">
 <title>Partenaires GBAF</title>
 </head>
@@ -43,10 +44,10 @@ while ($donnees = $req->fetch())
                 <div><p class="product"><?php echo substr($donnees['description_produit'],0, 200).'...'; ?></p></div>
             </div>
             <div class="block">
-                <p class="product"><a href="../src/php/download.php?id=<?=$id?>" class="button blue">Télécharger le logo</a></p>
+                <p class="product"><a href="../src/php/download.php?id=<?=$id?>" class="button blue"><i class="fas fa-download"></i> Télécharger le logo</a></p>
             </div>
             <div class="block">
-                <p class="product"><a href="information.php?id=<?=$id?>&page=1" class="button">Lire la suite</a></p>
+                <p class="product"><a href="information.php?id=<?=$id?>&page=1" class="button">Lire la suite <i class="fas fa-arrow-right"></i></a></p>
             </div>
             
             

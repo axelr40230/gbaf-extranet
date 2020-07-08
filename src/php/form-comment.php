@@ -10,8 +10,9 @@
 <div class="big-container">   
 
            <div class="block">
-                <p class="product"><a href="partners.php" class="button">Retour aux Partenaires</a></p>
+                <p class="product"><a href="partners.php" class="button"><i class="fas fa-arrow-left"></i> Retour aux Partenaires </a></p>
             </div>
         <div class="block">
-                <p class="product"><a href="information.php?id=<?=$id_following?>" class="button">Partenaire suivant</a></p>
+                <p class="product"><a href="information.php?id=<?=$id_following?>" class="button">Partenaire suivant <i class="fas fa-arrow-right"></i>
+</a></p>
             </div>

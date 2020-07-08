@@ -1,6 +1,9 @@
 <?php
 $id_produit = (int)$_GET['id'];
-$paging = $db->query("SELECT id FROM gbaf20_comments WHERE id_produit='$id_produit'"); 
+$paging = $db->prepare("SELECT id FROM gbaf20_comments WHERE id_produit=:id_produit");
+        $paging->execute(array(
+		'id_produit'=>$id_produit,
+		));
 $number = $paging->rowCount();
 if ($number>1){
     $message = 'Il y a '.$number.' commentaires';
@@ -11,7 +14,7 @@ elseif ($number==1){
     echo $message;
 }
 else{
-    $message = 'Aucun commentaire pour le moment ! ';
+    $message = 'Soyez le premier à laisser un commentaire ! ';
     echo $message;
 }
 ?>

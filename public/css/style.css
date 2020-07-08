@@ -108,6 +108,32 @@ p{
     box-shadow: 5px 5px 0px #FF0000;
     transform: scale(1.05);
 }
+.social{
+    display: flex;    
+}
+.like, .dislike, .user-like{
+    display: block;
+   border:solid 1px #22435D;
+    padding: 10px;
+    margin: 10px;
+    text-decoration: none;
+    transform: scale(1);
+    transition: transform 400ms;  
+}
+.like:hover, .dislike:hover, .user-like:hover{
+    background-color: #22435D;
+    color:#fff;
+    transform: scale(1.05);
+    border:solid 1px #22435D;
+}
+.dislike, .user-like{
+    background-color:#ff0000;
+    color:#fff;
+    transform: scale(1.05);
+    border:solid 1px #ff0000;
+}
+
+
 .red{
     background-color: #FF0000;
     color: #FFF;
@@ -373,13 +399,13 @@ input[type=submit]{
     width: 50%;
     color: #fff;
     text-transform: uppercase;
-    box-shadow: 5px 5px 0px #22435D;
+    box-shadow: -5px -5px 0px #22435D;
     transform: scale(1);
     transition: transform 400ms;  
 }
 input[type=submit]:hover{
     background-color: #22435D;
-    box-shadow: -5px -5px 0px #FF0000;
+    box-shadow: 5px 5px 0px #FF0000;
     transform: scale(1.05);
 }
 .large{

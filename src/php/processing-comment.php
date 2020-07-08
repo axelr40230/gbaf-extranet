@@ -10,10 +10,12 @@ if (isset($_POST['valider'])){
 		'id_produit'=>$id_produit,
 		'comment'=>$comment
 		));
+        
     }
     else{
         $message = 'Vous avez oublié d\'écrire votre message !';
         echo $message;
+        
     }
 }
 else{

@@ -1,4 +1,4 @@
-<div class="blue-box">
+<div class="blue-box" id="section-comment">
 <?php
 $id_produit = (int)$_GET['id'];
 $commentPerPage = 3;
@@ -35,13 +35,13 @@ for($i=1;$i<=$pagesTotales;$i++) {
              ?>
     
         
-            <?php echo '<li><a class="content paging" href="#">'.$i.'</a> </li>';?>
+            <?php echo '<li><a class="content paging" href="#section-comment">'.$i.'</a> </li>';?>
         
 
         <?php            
                  } else {
                      ?>
-                   <?php echo '<li><a class="content paging" href="information.php?id='. $id . '&page='.$i.'">'.$i.'</a> </li>';?>  
+                   <?php echo '<li><a class="content paging" href="information.php?id='. $id . '&page='.$i.'#section-comment">'.$i.'</a> </li>';?>  
     
 
     <?php
