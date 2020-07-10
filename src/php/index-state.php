@@ -1,12 +1,10 @@
 <?php
-    
-    if (isset($_SESSION['id']) AND isset($_SESSION['user'])){
-        $user=$_SESSION['user'];
-        
-        header('location:partners.php');
-    }
-else{
-    $message = 'BIENVENUE SUR L\'APPLICATION DÉDIÉE À LA PRÉSENTATION DES PRODUITS FINANCIERS DU GROUPE';
+
+if (isset($_SESSION['id']) AND isset($_SESSION['user'])) {
+    $user = $_SESSION['user'];    
+    header('location:partners.php');
+} else {
+    $message = 'BIENVENUE sur la page d\'identification de votre Extranet </br>(espace réservé aux adhérents GBAF).';
     echo $message;
 }
 
