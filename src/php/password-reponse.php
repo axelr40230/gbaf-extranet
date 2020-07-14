@@ -18,6 +18,8 @@ if (isset($_GET['question'])) {
             $resultat2     = $req->fetch();
             $id_user_check = $resultat2['id'];
             $reponse       = $resultat2['reponse'];
+            var_dump($reponse);
+            exit();
             if ($user_reponse == $reponse) {
                 header('location:password-reset.php?id=' . $id_user_check);
             } else {
@@ -27,7 +29,7 @@ if (isset($_GET['question'])) {
             $message = 'Il manque votre réponse';
         }
     } else {
-        $message = ' ';
+        $message = '';
     }
     
 } else {

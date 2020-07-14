@@ -52,7 +52,7 @@ session_start();
 						<div class="field-form">
 							<label for="question"></label>
 							<select name="question" id="question" class="question">
-								<option value="<?php echo $question ?>">Choisir une nouvelle question</option>
+								<option value="<?php echo $question ?>"><?php echo $question ?></option>
 								<option value="Quel est le nom de votre premier animal de compagnie ?">Quel est le nom de votre premier animal de compagnie ?</option>
 								<option value="Comment s'appelle votre mère ?">Comment s'appelle votre mère ?</option>
 								<option value="Où êtes-vous né.e ?">Où êtes-vous né·e ?</option>
