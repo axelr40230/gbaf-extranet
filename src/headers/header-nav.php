@@ -4,12 +4,12 @@
 	</div>
 	<nav>
 		<div class="container-nav">
-			<label for="mobile"><img src="images/menu.svg" width="20" height="20"></label>
+			<label for="mobile"><img src="images/menu.svg" class="img-menu"></label>
 			<input type="checkbox" id="mobile" role="button">
 			<ul>
-				<li><a href="partners.php">Produits</a></li>
-				<li><a href="dashbord.php"><?php echo $identity; ?></a></li>
-				<li><a href="processing-disconnection.php">Me déconnecter</a></li>
+				<li class="grow"><a href="partners.php"><i class="far fa-list-alt"></i>   Partenaires</a></li>
+				<li class="grow"><a href="dashbord.php"><i class="fas fa-house-user"></i>     <?php echo $identity; ?></a></li>
+				<li class="grow"><a href="processing-disconnection.php"><i class="fas fa-sign-out-alt"></i>   Me déconnecter</a></li>
 			</ul>
 		</div>
 	</nav>

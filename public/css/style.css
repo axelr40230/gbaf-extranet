@@ -500,7 +500,18 @@ nav > div > ul > li > a
 	font-size: 20px;
 	text-decoration: none;
 }
+.grow { 
+transform: scale(1);
+transition: transform 400ms; 
+}
 
+.grow:hover { 
+transform: scale(1.25); 
+}
+.img-menu{
+    width: 20px;
+    height: 20px;
+}
 nav label, nav input
 {
 	display: none !important;

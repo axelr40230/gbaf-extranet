@@ -33,6 +33,7 @@ if (isset($_GET['page']) AND !empty($_GET['page']) AND $_GET['page'] > 0 AND $_G
 }
 //traitement des informations pour affichage des commentaires voulus selon la page chargée
 $base = ($pageCourante - 1) * $commentPerPage;
+    
 ?>
   <h2 class="title product-detail"><i class="fab fa-readme fa-5x"></i></br><?php
 echo $number_comment;
@@ -43,8 +44,10 @@ $req = $db->prepare("SELECT m.user user_name, c.comment comment, DATE_FORMAT(c.d
 $req->execute(array(
     'id_produit' => $id_produit
 ));
+
 //on boucle pour l'affichage des commentaires
-while ($donnees = $req->fetch()) {
+while ($donnees = $req->fetch())
+{
 ?>
   <div class="white-box">
         <p class="left-text">

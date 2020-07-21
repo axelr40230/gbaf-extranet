@@ -8,6 +8,7 @@ session_start();
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width" />
 		<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+        <script src="https://kit.fontawesome.com/a98611f8ee.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/style-tablette.css">
         <link rel="stylesheet" href="css/style-smartphone.css">

@@ -150,13 +150,12 @@ echo $class_dislike;
 ?>"><i class="fas fa-thumbs-down"></i> Je n'aime pas</a></p>
     </div>
 </div>
-				<?php require '../src/php/product-comment.php';?>
+				
                 
 				<div class="blue-box" id="section-comment">
 	<div class="white-box">
         
-		<form action="<?php // gestion de l'ancre pour renvoyer à la section commentaires à l'envoi d'un commentaire
-                      $_SERVER['PHP_SELF']?>#section-comment" method="post">
+		<form action="information.php?id=<?= $id_produit ?>&page=1#section-comment" method="post">
 			<p class="left-text">
 				<?php if (isset($_POST['valider'])) {
     if (!empty($_GET['id']) AND !empty($_POST['comment']) AND isset($_GET['page'])) {
@@ -171,15 +170,16 @@ echo $class_dislike;
             'id_produit' => $id_produit,
             'comment' => $comment
         ));
-        $message_comment = 'Merci de votre commentaire <i class="far fa-smile-wink"></i>';
+        $message_comment = 'Merci de votre commentaire <i class="far fa-smile-wink red-text"></i>';
        echo $message_comment;
+        
     } else {
-        $message_comment = '<i class="fas fa-exclamation-circle"></i> Vous avez oublié d\'écrire votre message !';
+        $message_comment = '<i class="fas fa-exclamation-circle red-text"></i> Vous avez oublié d\'écrire votre message !';
         echo $message_comment;
         
     }
 } else {
-    $message_comment = '<i class="far fa-comment"></i> Laisser un commentaire';
+    $message_comment = '<i class="far fa-comment red-text"></i> Laisser un commentaire';
     echo $message_comment;
 };?>
 			</p>
@@ -188,6 +188,7 @@ echo $class_dislike;
 		</form>
 	</div>
 </div>
+                <?php require '../src/php/product-comment.php';?>
 <div class="big-container">
 	<div class="block">
 		<p class="product">

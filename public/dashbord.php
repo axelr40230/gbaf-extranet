@@ -3,7 +3,6 @@ require '../src/php/db.php';
 session_start();
 require '../src/php/connecting-state.php';
 require '../src/php/user-name.php';
-
 ?>
 <!doctype html>
 <html>
@@ -14,7 +13,7 @@ require '../src/php/user-name.php';
 		<script src="https://kit.fontawesome.com/a98611f8ee.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/style-tablette.css">
-        <link rel="stylesheet" href="css/style-smartphone.css">>
+        <link rel="stylesheet" href="css/style-smartphone.css">
 		<title>
 			GBAF | 
 			<?php echo $identity; ?>
@@ -57,7 +56,7 @@ require '../src/php/user-name.php';
 						<div class="field-form">
 							<label for="question"></label>
 							<select name="question" id="question" class="question">
-								<option value="<?php echo $question ?>"><?php echo $question ?></option>
+								<option value="">Sélectionner votre question</option>
 								<option value="Quel est le nom de votre premier animal de compagnie ?">Quel est le nom de votre premier animal de compagnie ?</option>
 								<option value="Comment s'appelle votre mère ?">Comment s'appelle votre mère ?</option>
 								<option value="Où êtes-vous né.e ?">Où êtes-vous né·e ?</option>

@@ -1,5 +1,13 @@
 <?php
 try {
+    $listing_question = $db->query('SELECT * FROM gbaf20_question');
+    $values_questions = $listing_question ->fetch();
+    foreach ($value as $values_questions){
+        $value_input = $value;
+    }
+    
+    
+    
     if (isset($_POST['valider'])) {
         if (!empty($_POST['nom']) AND !empty($_POST['prenom']) AND !empty($_POST['user']) AND !empty($_POST['pass']) AND !empty($_POST['pass-confirm']) AND !empty($_POST['question']) AND !empty($_POST['reponse'])) {
             //validation des données envoyées par l'utilisateur

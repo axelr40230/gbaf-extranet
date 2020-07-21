@@ -64,7 +64,10 @@
         width: 100%;
         font-size: 12px;
     }
-
+    select
+    {
+        width: 100% !important;	
+    }
     .question
     {
         font-size: 12px;
@@ -84,7 +87,7 @@
     /* CSS navigation tablette */
     nav
     {
-        width: 50%;
+        width: 60%;
         margin: 0 auto;
         background-color: rgba(0,0,0,0.00);
         align-self: baseline;
@@ -105,7 +108,7 @@
     .container-nav
     {
         position: absolute;
-        width: 40%;
+        width: 50%;
     }
 
     nav input[type=checkbox]
@@ -116,7 +119,7 @@
     nav label
     {
         display: inline-block !important;
-        width: 50%;
+        width: 100%;
         padding: 0;
         text-align: center;
         background-color: rgba(0,0,0,0.00);
@@ -128,29 +131,29 @@
         background-color: #FF0000;
         padding: 10px;
     }
-
+    
     nav input[type=checkbox]:checked + ul
     {
         display: flex !important;
         flex-flow: column wrap;
     }
-
+    
     nav ul li
     {
         flex: 1 1 auto;
         text-align: center;
     }
-
+    
     nav a
     {
         display: block;
         padding: 10px 0px;
     }
-
+    
     nav a:hover
     {
         color: #22435D;
     }
-    }
+}
 
 
