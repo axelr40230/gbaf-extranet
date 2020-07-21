@@ -8,8 +8,8 @@
 			<input type="checkbox" id="mobile" role="button">
 			<ul>
 				<li><a href="partners.php">Produits</a></li>
-				<li><a href="dashbord.php"><?php include '../src/php/user-name.php';?></a></li>
-				<li><a href="../src/php/processing-disconnection.php">Me déconnecter</a></li>
+				<li><a href="dashbord.php"><?php echo $identity; ?></a></li>
+				<li><a href="processing-disconnection.php">Me déconnecter</a></li>
 			</ul>
 		</div>
 	</nav>

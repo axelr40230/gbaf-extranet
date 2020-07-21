@@ -1,6 +1,7 @@
 <?php 
 require '../src/php/db.php';
 session_start();
+require '../src/php/index-state.php';
 ?>
 <!doctype html>
 <html>
@@ -9,6 +10,8 @@ session_start();
 		<meta name="viewport" content="width=device-width" />
 		<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
 		<link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-tablette.css">
+        <link rel="stylesheet" href="css/style-smartphone.css">
 		<title>Accès Extranet GBAF</title>
 	</head>
 	<body>
@@ -16,7 +19,7 @@ session_start();
 			<?php require '../src/headers/header-index.php';?>
 			<div class="mega">
 				<div>
-					<h1 class="title white-text"><?php require '../src/php/index-state.php';?></p>
+					<h1 class="title white-text"><?php echo $info; ?></p>
 				</h1>
 				<hr>
 			</div>

@@ -2,6 +2,7 @@
 require '../src/php/db.php';
 session_start();
 require '../src/php/connection-state.php';
+require '../src/php/processing-connection.php';
 ?>
 <!doctype html>
 <html>
@@ -10,6 +11,8 @@ require '../src/php/connection-state.php';
 		<meta name="viewport" content="width=device-width" />
 		<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
 		<link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-tablette.css">
+        <link rel="stylesheet" href="css/style-smartphone.css">
 		<title>Connexion à l'Extranet GBAF</title>
 	</head>
 	<body>
@@ -32,7 +35,7 @@ require '../src/php/connection-state.php';
 				<form action="" method="post">
 					<div class="field-form">
 						<p class="red-text">
-							<?php require '../src/php/processing-connection.php';?>
+							<?php echo $message; ?>
 						</p>
 						<label for="user" class="field-form"></label>
 						<input type="text" name="user" id="user" placeholder="Votre nom d'utilisateur">

@@ -9,6 +9,8 @@ session_start();
 		<meta name="viewport" content="width=device-width" />
 		<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
 		<link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-tablette.css">
+        <link rel="stylesheet" href="css/style-smartphone.css">
 		<title>Confirmation d'inscription à l'Extranet GBAF</title>
 	</head>
 	<body>

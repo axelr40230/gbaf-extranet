@@ -1,6 +1,6 @@
 <footer>
 	<p class="white-text">
 		Copyright | 
-		<a href="#" class="white-text">Mentions légales</a>
+		<a href="mentions-legales.php" class="white-text">Mentions légales</a>
 	</p>
 </footer>

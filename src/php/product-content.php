@@ -1,8 +1,12 @@
 <div>
     <?php
+    //recuperation des informations sur le produit
 if (isset($_GET['id'])) {
     $id           = (int) $_GET['id'];
-    $req          = $db->query("SELECT * FROM gbaf20_produits WHERE id = '$id'");
+    $req          = $db->prepare("SELECT * FROM gbaf20_produits WHERE id = :id");
+    $req->execute(array(
+        'id' => $id
+    ));
     $id_following = (int) $_GET['id'] + 1;
     if ($donnees = $req->fetch()) {
 ?>

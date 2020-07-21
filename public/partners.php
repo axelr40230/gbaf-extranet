@@ -1,6 +1,8 @@
 <?php 
 require '../src/php/db.php';
 session_start();
+require '../src/php/connecting-state.php';
+require '../src/php/user-name.php';
 ?>
 <!doctype html>
 <html>
@@ -10,6 +12,8 @@ session_start();
 		<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
 		<script src="https://kit.fontawesome.com/a98611f8ee.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-tablette.css">
+        <link rel="stylesheet" href="css/style-smartphone.css">
 		<title>Partenaires GBAF</title>
 	</head>
 	<body>
@@ -32,8 +36,12 @@ session_start();
 					</p>
 				</div>
 				<?php
+                //récupération des données partenaires et mise en boucle
                 $req = $db->query ('SELECT * FROM gbaf20_produits');
-                while ($donnees = $req->fetch()){$id = (int) $donnees['id'];
+                while ($donnees = $req->fetch()){
+                    //répurération de l'id du partenaire pour la page download
+                    $id = (int) $donnees['id'];
+                    //generation de la balise alt en fonction du nom du fichier
                 $alt = basename($donnees['logo']);
                 ?>
 				<div class="big-container partners">
@@ -50,7 +58,7 @@ session_start();
 					</div>
 					<div class="block">
 						<p class="product">
-							<a href="../src/php/download.php?id=<?=$id?>" class="button blue"><i class="fas fa-download"></i> Télécharger le logo</a>
+							<a href="download.php?id=<?=$id?>" class="button blue"><i class="fas fa-download"></i> Télécharger le logo</a>
 						</p>
 					</div>
 					<div class="block">

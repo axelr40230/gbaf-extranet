@@ -100,14 +100,14 @@ if (isset($_GET['id']) AND isset($_GET['user-click-vote']) AND isset($_GET['page
     <div class="block">
         <p class="red-text"><?php
 echo $number_like;
-?> <i class="fas fa-thumbs-up"></i><a href="information.php?id=<?= $id_produit ?>&page=<?= $numero_page ?>&user-click-vote=1#vote-section" class="<?php
+?> <i class="fas fa-thumbs-up"></i><a href="../../public/information.php?id=<?= $id_produit ?>&page=<?= $numero_page ?>&user-click-vote=1#vote-section" class="<?php
 echo $class_like;
 ?>"><i class="fas fa-thumbs-up"></i> J'aime</a></p>
     </div>
     <div class="block">
         <p class="red-text"><?php
 echo $number_dislike;
-?> <i class="fas fa-thumbs-down"></i><a href="information.php?id=<?= $id_produit ?>&page=<?= $numero_page ?>&user-click-vote=0#vote-section" class="<?php
+?> <i class="fas fa-thumbs-down"></i><a href="../../public/information.php?id=<?= $id_produit ?>&page=<?= $numero_page ?>&user-click-vote=0#vote-section" class="<?php
 echo $class_dislike;
 ?>"><i class="fas fa-thumbs-down"></i> Je n'aime pas</a></p>
     </div>

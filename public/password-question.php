@@ -1,18 +1,21 @@
 <?php
-require 'db.php';
+require '../src/php/db.php';
 session_start();
+require 'password-reponse.php';
 ?>
 <!doctype html>
 <html>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width" />
-		<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-		<link rel="stylesheet" href="../../public/css/style.css">
+		<link rel="shortcut icon" type="image/png" href="../src/php/images/favicon.png"/>
+		<link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-tablette.css">
+        <link rel="stylesheet" href="css/style-smartphone.css">
 		<title>Votre question secrète</title>
 	</head>
 	<body>
-		<?php require '../headers/header-inscription-connexion-src.php';?>
+		<?php require '../src/headers/header-inscription-connexion-src.php';?>
 		<div class="mega">
 			<div>
 				<h1 class="title shadow">Répondez à votre question secrète</h1>
@@ -22,11 +25,7 @@ session_start();
 			</div>
 			<div class="big-container column">
 				<form action="" method="post">
-					<div class="field-form">
-						<p class="red-text">
-							<?php require 'password-reponse.php';?>
-						</p>
-					</div>
+					
 					<p>
 						<?php echo $question ?>
 					</p>
@@ -43,11 +42,11 @@ session_start();
 				<hr class="space">
 				<div class="big-container">
 					<p>
-						<a href="../../public/connexion.php" class="button blue">Retour connexion</a>
+						<a href="connexion.php" class="button blue">Retour connexion</a>
 					</p>
 				</div>
 			</div>
 		</div>
-		<?php require 'footer.php';?>
+		<?php require '../src/php/footer.php';?>
 	</body>
 </html>

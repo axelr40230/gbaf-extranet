@@ -9,5 +9,5 @@ session_destroy();
 setcookie('user', '');
 setcookie('pass', '');
 
-header('Location: ../../public/connexion.php');
+header('Location: ../../connexion.php');
 ?>

@@ -1,0 +1,156 @@
+@charset "utf-8";
+/* CSS Document */
+/* CSS TABLETTE */
+@media screen and (min-width: 481px) and (max-width: 992px)
+{
+    h1, h2, h3
+    {
+        font-size: 14px;
+        text-shadow:none;
+    }
+    
+    p, a
+    {
+        font-size: 12px;
+        text-align: center;
+    }
+    p.product{
+        text-align: center;
+    }
+    hr{
+        display: none;
+    }
+    .mega
+    {
+        width: 100%;
+    }
+
+    .big-container
+    {
+        width: 100%;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .column
+    {
+        flex-flow: column wrap;
+    }
+
+    .content
+    {
+        margin: 10px;
+    }
+
+    .button
+    {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .block
+    {
+        flex-flow: column wrap;
+    }
+
+    input[type=submit]
+    {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    input
+    {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    .question
+    {
+        font-size: 12px;
+    }
+
+    img.logo-big3
+    {
+        width: 75px;
+        height: 75px;
+    }
+
+    .illustration
+    {
+        width: 100%;
+    }
+
+    /* CSS navigation tablette */
+    nav
+    {
+        width: 50%;
+        margin: 0 auto;
+        background-color: rgba(0,0,0,0.00);
+        align-self: baseline;
+    }
+
+    .logo
+    {
+        width: 40%;
+    }
+
+    nav > div > ul > li > a
+    {
+        font-weight: 300;
+        font-size: 12px;
+        text-align: left;
+    }
+
+    .container-nav
+    {
+        position: absolute;
+        width: 40%;
+    }
+
+    nav input[type=checkbox]
+    {
+        display: none;
+    }
+
+    nav label
+    {
+        display: inline-block !important;
+        width: 50%;
+        padding: 0;
+        text-align: center;
+        background-color: rgba(0,0,0,0.00);
+    }
+
+    nav ul
+    {
+        display: none !important;
+        background-color: #FF0000;
+        padding: 10px;
+    }
+
+    nav input[type=checkbox]:checked + ul
+    {
+        display: flex !important;
+        flex-flow: column wrap;
+    }
+
+    nav ul li
+    {
+        flex: 1 1 auto;
+        text-align: center;
+    }
+
+    nav a
+    {
+        display: block;
+        padding: 10px 0px;
+    }
+
+    nav a:hover
+    {
+        color: #22435D;
+    }
+    }
+
+

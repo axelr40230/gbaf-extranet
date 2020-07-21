@@ -6,13 +6,13 @@ $paging->execute(array(
 ));
 $number = $paging->rowCount();
 if ($number > 1) {
-    $message = 'Il y a ' . $number . ' commentaires';
-    echo $message;
+    echo 'Il y a ' . $number . ' commentaires';
+    
 } elseif ($number == 1) {
-    $message = 'Il y a ' . $number . ' commentaire';
-    echo $message;
+    echo 'Il y a ' . $number . ' commentaire';
+    
 } else {
-    $message = 'Soyez le premier à laisser un commentaire ! ';
-    echo $message;
+    echo 'Soyez le premier à laisser un commentaire ! ';
+    
 }
 ?>

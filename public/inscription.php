@@ -1,6 +1,7 @@
 <?php 
 require '../src/php/db.php';
 session_start();
+require '../src/php/processing-recording.php';
 ?>
 <!doctype html>
 <html>
@@ -9,6 +10,8 @@ session_start();
 		<meta name="viewport" content="width=device-width" />
 		<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
 		<link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-tablette.css">
+        <link rel="stylesheet" href="css/style-smartphone.css">
 		<title>Inscription à l'Extranet GBAF</title>
 	</head>
 	<body>
@@ -27,7 +30,7 @@ session_start();
 			<div class="big-container">
 				<form action="" method="post">
 					<p class="red-text">
-						<?php require '../src/php/processing-recording.php';?>
+						<?php echo $message ?>
 					</p>
 					<div class="field-form">
 						<label for="nom"><input type="text" name="nom" id="nom" placeholder="Votre nom"></label>

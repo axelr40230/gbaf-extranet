@@ -1,4 +1,5 @@
 <?php
+//récupération des informations utilisateurs pour le menu et le rappel du non dans la page partners
 if (isset($_SESSION['id'])) {
     $id_user = (int) $_SESSION['id'];
     $req     = $db->prepare("SELECT * FROM gbaf20_membres WHERE id = :id_user");
@@ -6,11 +7,8 @@ if (isset($_SESSION['id'])) {
         'id_user' => $id_user
     ));
     $donnees = $req->fetch();
-    $nom     = htmlspecialchars($donnees['nom']);
-    $prenom  = htmlspecialchars($donnees['prenom']);
-    echo $nom . ' ' . $prenom;
-    
-} else {
-    header('location:index.php');
+    $nom     = $donnees['nom'];
+    $prenom  = $donnees['prenom'];
+    $identity =  $nom . ' ' . $prenom;    
 }
 ?>

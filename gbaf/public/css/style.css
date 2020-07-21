@@ -1,3 +1,4 @@
+﻿
 @charset "utf-8";
 /* CSS Document */
 /* CSS PC */
@@ -69,7 +70,7 @@ h2.title-comment
 	background: linear-gradient(0.25turn, #22435D, #326587, #22435D);
 }
 
-h2.title-why, h3.title-why
+h2.title-why
 {
 	color: #22435D;
 	background: none;
@@ -265,9 +266,7 @@ p
 {
 	color: #fff;
 }
-a.white-text{
-  cursor: url("../images/cursor.png"), auto;  
-}
+
 .red-text
 {
 	color: #FF0000;
@@ -561,7 +560,6 @@ input
 	padding: 10px;
 	border: none;
 	font-size: 18px;
-
 	border-radius: 5px;
 }
 
@@ -678,3 +676,304 @@ img.illustration
 	align-items: center;
 }
 
+/* CSS SMARTPHONE */
+@media screen and (min-width: 200px) and (max-width: 480px)
+{
+	/* CSS globale smartphone */
+	h1, h2, h3
+	{
+		font-size: 14px;
+	}
+
+	p, a
+	{
+		font-size: 12px;
+	}
+
+	.mega
+	{
+		width: 100%;
+	}
+
+	.big-container
+	{
+		width: 100%;
+		flex-flow: row wrap;
+		justify-content: space-around;
+	}
+
+	.column
+	{
+		flex-flow: column wrap;
+	}
+
+	.content
+	{
+		margin: 10px;
+	}
+
+	.button
+	{
+		width: 100%;
+		font-size: 12px;
+	}
+
+	.block
+	{
+		flex-flow: column wrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+	}
+
+	input
+	{
+		width: 100%;
+		font-size: 12px;
+	}
+
+	input[type=submit]
+	{
+		width: 100%;
+		font-size: 12px;
+	}
+
+	select
+	{
+		width: 100% !important;
+		font-size: 12px;
+	}
+
+	.question
+	{
+		font-size: 12px;
+	}
+
+	img.logo-big
+	{
+		width: 150px;
+		height: 150px;
+	}
+
+	img.logo-big3
+	{
+		width: 75px;
+		height: 75px;
+	}
+
+	/* CSS navigation smartphone */
+	nav
+	{
+		width: 50%;
+		margin: 0 auto;
+		background-color: rgba(0,0,0,0.00);
+		align-self: baseline;
+	}
+
+	nav > div > ul > li > a
+	{
+		font-weight: 300;
+		font-size: 12px;
+		text-align: left;
+	}
+
+	.logo
+	{
+		width: 40%;
+	}
+
+	.container-nav
+	{
+		position: absolute;
+		width: 40%;
+	}
+
+	nav input[type=checkbox]
+	{
+		display: none;
+	}
+
+	nav label
+	{
+		display: inline-block;
+		width: 50%;
+		padding: 0;
+		text-align: center;
+		background-color: rgba(0,0,0,0.00);
+	}
+
+	nav ul
+	{
+		display: none;
+		background-color: #FF0000;
+		padding: 10px;
+	}
+
+	nav input[type=checkbox]:checked + ul
+	{
+		display: flex;
+		flex-flow: column wrap;
+	}
+
+	nav ul li
+	{
+		flex: 1 1 auto;
+		text-align: left;
+	}
+
+	nav a
+	{
+		display: block;
+		padding: 10px 0px;
+	}
+
+	nav a:hover
+	{
+		color: #22435D;
+	}
+}
+
+/* CSS TABLETTE */
+@media screen and (min-width: 481px) and (max-width: 992px)
+{
+	h1, h2, h3
+	{
+		font-size: 14px;
+	}
+
+	p, a
+	{
+		font-size: 12px;
+	}
+
+	.mega
+	{
+		width: 100%;
+	}
+
+	.big-container
+	{
+		width: 100%;
+		flex-flow: row wrap;
+		justify-content: space-around;
+	}
+
+	.column
+	{
+		flex-flow: column wrap;
+	}
+
+	.content
+	{
+		margin: 10px;
+	}
+
+	.button
+	{
+		width: 100%;
+		font-size: 12px;
+	}
+
+	.block
+	{
+		flex-flow: column wrap;
+	}
+
+	input[type=submit]
+	{
+		width: 100%;
+		font-size: 12px;
+	}
+
+	input
+	{
+		width: 100%;
+		font-size: 12px;
+	}
+
+	.question
+	{
+		font-size: 12px;
+	}
+
+	img.logo-big3
+	{
+		width: 75px;
+		height: 75px;
+	}
+
+	.illustration
+	{
+		width: 100%;
+	}
+
+	/* CSS navigation tablette */
+	nav
+	{
+		width: 50%;
+		margin: 0 auto;
+		background-color: rgba(0,0,0,0.00);
+		align-self: baseline;
+	}
+
+	.logo
+	{
+		width: 40%;
+	}
+
+	nav > div > ul > li > a
+	{
+		font-weight: 300;
+		font-size: 12px;
+		text-align: left;
+	}
+
+	.container-nav
+	{
+		position: absolute;
+		width: 40%;
+	}
+
+	nav input[type=checkbox]
+	{
+		display: none;
+	}
+
+	nav label
+	{
+		display: inline-block;
+		width: 50%;
+		padding: 0;
+		text-align: center;
+		background-color: rgba(0,0,0,0.00);
+	}
+
+	nav ul
+	{
+		display: none;
+		background-color: #FF0000;
+		padding: 10px;
+	}
+
+	nav input[type=checkbox]:checked + ul
+	{
+		display: flex;
+		flex-flow: column wrap;
+	}
+
+	nav ul li
+	{
+		flex: 1 1 auto;
+		text-align: center;
+	}
+
+	nav a
+	{
+		display: block;
+		padding: 10px 0px;
+	}
+
+	nav a:hover
+	{
+		color: #22435D;
+	}
+}

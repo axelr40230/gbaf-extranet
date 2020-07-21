@@ -11,15 +11,15 @@ if (isset($_POST['valider'])) {
             'id_produit' => $id_produit,
             'comment' => $comment
         ));
-        $message = 'Merci de votre commentaire <i class="far fa-smile-wink"></i>';
-        echo $message;
+        $message_comment = 'Merci de votre commentaire <i class="far fa-smile-wink"></i>';
+       
     } else {
-        $message = '<i class="fas fa-exclamation-circle"></i> Vous avez oublié d\'écrire votre message !';
-        echo $message;
+        $message_comment = '<i class="fas fa-exclamation-circle"></i> Vous avez oublié d\'écrire votre message !';
+        
         
     }
 } else {
-    $message = '<i class="far fa-comment"></i> Laisser un commentaire';
-    echo $message;
+    $message_comment = '<i class="far fa-comment"></i> Laisser un commentaire';
+    
 }
 ?>

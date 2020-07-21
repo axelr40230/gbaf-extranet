@@ -1,6 +1,7 @@
 <?php 
 require '../src/php/db.php';
 session_start();
+require 'password-user.php';
 ?>
 <!doctype html>
 <html>
@@ -9,6 +10,8 @@ session_start();
 		<meta name="viewport" content="width=device-width" />
 		<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
 		<link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-tablette.css">
+        <link rel="stylesheet" href="css/style-smartphone.css">
 		<title>Mot de passe oublié</title>
 	</head>
 	<body>
@@ -24,7 +27,7 @@ session_start();
 				<form action="" method="post">
 					<div class="field-form">
 						<p class="red-text">
-							<?php require '../src/php/password-user.php';?>
+							<?php echo $message;?>
 						</p>
 					</div>
 					<div class="field-form">

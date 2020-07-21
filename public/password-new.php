@@ -13,14 +13,13 @@ if (isset($_GET['id'])) {
                 ));
                 header('location:../../public/connexion.php');
             } else {
-                echo 'Les mots de passe ne sont pas identiques';
+                $message = 'Les mots de passe ne sont pas identiques';
             }
         } else {
-            echo 'Vous n\'avez pas entré de nouveau mot de passe !';
+            $message = 'Vous n\'avez pas entré de nouveau mot de passe !';
         }
     } else {
-        $message = ' ';
-        echo $message;
+        $message = '';        
     }
 } else {
     header('location:../../public/forgot-password.php');

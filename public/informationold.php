@@ -43,7 +43,7 @@ session_start();
                 <p class="product"><a href="partners.php" class="button">Retour aux Partenaires</a></p>
             </div>
         <div class="block">
-                <p class="product"><a href="information.php?id=<?=$id_following?>" class="button">Partenaire suivant</a></p>
+                <p class="product"><a href="information2.php?id=<?=$id_following?>" class="button">Partenaire suivant</a></p>
             </div>
     </div>
         <div class="blue-box">
@@ -93,7 +93,7 @@ $paging->closeCursor();
                 <p class="product"><a href="partners.php" class="button">Retour aux Partenaires</a></p>
             </div>
         <div class="block">
-                <p class="product"><a href="information.php?id=<?=$id_following?>" class="button">Partenaire suivant</a></p>
+                <p class="product"><a href="information2.php?id=<?=$id_following?>" class="button">Partenaire suivant</a></p>
             </div>
     </div>
         <?php
