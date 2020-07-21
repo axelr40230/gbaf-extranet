@@ -1,6 +1,6 @@
 <header id="content-header3">
 	<div class="logo">
-		<a href="index.php"><img src="images/logo.png" alt="Logo GBAF" width="155" height="155" class="logo-big3"></a>
+		<a href="index.php"><img src="images/logo.png" alt="Logo GBAF" class="logo-big3 grow"></a>
 	</div>
 	<nav>
 		<div class="container-nav">

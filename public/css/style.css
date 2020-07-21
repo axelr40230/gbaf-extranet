@@ -439,6 +439,8 @@ img.logo-big
 	background-color: #fff;
 	padding: 10px;
 	border-radius: 300px;
+    width: 300px;
+    height: 300px;
 }
 
 /* CSS pour le header pages inscription et connexion PC */
@@ -457,6 +459,8 @@ img.logo-big2
 	background-color: #fff;
 	padding: 10px;
 	border-radius: 300px;
+    width: 155px;
+    height: 155px;
 }
 
 /* CSS header page product et profil */
@@ -483,6 +487,8 @@ img.logo-big3
 	background-color: #fff;
 	padding: 10px;
 	border-radius: 300px;
+    width: 155px;
+    height: 155px;
 }
 
 /* CSS navigation PC */
