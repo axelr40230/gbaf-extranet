@@ -9,4 +9,3 @@ if (isset($_GET['id'])) {
     $data_product = $product_name->fetch();
     $name_product = htmlspecialchars($data_product['nom_produit']);    
 }
-?>

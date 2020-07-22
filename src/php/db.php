@@ -18,4 +18,3 @@ catch (PDOException $e) {
 }
 
 // Fin de la connexion à la base de donnée
-?>

@@ -5,7 +5,7 @@ require '../src/php/connecting-state.php';
 require '../src/php/user-name.php';
 ?>
 <!doctype html>
-<html>
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width" />
@@ -23,9 +23,9 @@ require '../src/php/user-name.php';
 		<?php require '../src/headers/header-nav.php';?>
 		<div class="mega">
 			<div class="blue-box">
-				<h1 class="title product-detail"><i class="fas fa-house-user fa-2x"></i></br></br>Bienvenue <?php echo $identity; ?></h1>
+				<h1 class="title product-detail"><i class="fas fa-house-user fa-2x"></i><br /><br />Bienvenue <?php echo $identity; ?></h1>
 				<div class="big-container column">
-					<form action="" method="post">
+					<form action="#" method="post">
 						<p class="red-text dashbord-box">
 							<?php require '../src/php/update-user.php';?>
 						</p>

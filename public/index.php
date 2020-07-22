@@ -4,7 +4,7 @@ session_start();
 require '../src/php/index-state.php';
 ?>
 <!doctype html>
-<html>
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width" />
@@ -15,13 +15,12 @@ require '../src/php/index-state.php';
         <link rel="stylesheet" href="css/style-smartphone.css">
 		<title>Accès Extranet GBAF</title>
 	</head>
-	<body>
+	
 		<body  id="homebody">
 			<?php require '../src/headers/header-index.php';?>
 			<div class="mega">
 				<div>
-					<h1 class="title white-text"><?php echo $info; ?></p>
-				</h1>
+					<h1 class="title white-text"><?php echo $info; ?></h1>
 				<hr>
 			</div>
 			<div class="big-container">
@@ -47,21 +46,20 @@ require '../src/php/index-state.php';
 				<hr>
 				<p class="content left-text">
 					Le Groupement Banque-Assurance Français (GBAF) est l'
-					<strong>organisation professionnelle qui représente toutes les banques installées en France</strong>
-					.
-					</br>
-					</br>
+					<strong>organisation professionnelle qui représente toutes les banques installées en France.</strong>					
+					<br />
+					<br />
 					La GBAF est une fédération représentant les 6 grands groupes français (BNP Paribas, BPCE, Crédit Agricole, Crédit Mutuel-CIC, Société Générale, La Banque Postale)
-					</br>
-					</br>
+					<br />
+					<br />
 					Même s’il existe une forte concurrence entre ces entités, elles vont toutes travailler de la même façon pour gérer 
 					<strong>près de 80 millions de comptes</strong>
 					 sur le territoire national.
-					</br>
-					</br>
+					<br />
+					<br />
 					Le GBAF est le représentant de la profession bancaire et des assureurs sur tous les axes de la réglementation financière française. Sa mission est de 
-					<strong>promouvoir l'activité bancaire à l’échelle nationale</strong>
-					. C’est aussi un interlocuteur privilégié des pouvoirs publics
+					<strong>promouvoir l'activité bancaire à l’échelle nationale.</strong>
+					 C’est aussi un interlocuteur privilégié des pouvoirs publics
 				</p>
 				<p class="content left-text">
 					Les produits et services bancaires sont nombreux et très variés. Afin de 

@@ -64,4 +64,3 @@ try {
     echo $e->getMessage() . '<br />';
     echo 'Ligne : ' . $e->getLine();
 }
-?>

@@ -7,7 +7,6 @@ if (isset($_SESSION['id']) AND isset($_SESSION['user'])) {
     
 } else {
     //si non, reste sur la page index et affiche ce message
-    $info = 'BIENVENUE sur la page d\'identification de votre Extranet </br>(espace réservé aux adhérents GBAF).';
+    $info = 'BIENVENUE sur la page d\'identification de votre Extranet <br />(espace réservé aux adhérents GBAF).';
     }
 
-?>

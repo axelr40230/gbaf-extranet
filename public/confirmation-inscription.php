@@ -3,7 +3,7 @@ require '../src/php/db.php';
 session_start();
 ?>
 <!doctype html>
-<html>
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width" />
@@ -17,13 +17,13 @@ session_start();
 	<body>
 		<?php require '../src/headers/header-inscription-connexion.php';?>
 		<div class="mega">
-			<div class="big-container column">
+			<div class="big-container column row">
 				<h1 class="title shadow">Votre inscription a bien été enregistrée. Nous vous en remercions</h1>
 				<p>
 					Vous pouvez désormais vous connecter à l'application dédiée à la recherche des meilleurs produits financiers du groupe. 
 				</p>
 			</div>
-			<div class="big-container column">
+			<div class="big-container column row">
 				<p>
 					<a href="connexion.php" class="button">Se connecter</a>
 				</p>

@@ -117,7 +117,7 @@ if (isset($_GET['id']) AND isset($_GET['user-click-vote']) AND isset($_GET['page
 }
 ?>
 <!doctype html>
-<html>
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width" />
@@ -202,6 +202,7 @@ echo $class_dislike;
 	</div>
 			</div>
 		</div>
+            </div>
 		<?php require '../src/php/footer.php';?>
 	</body>
 </html>

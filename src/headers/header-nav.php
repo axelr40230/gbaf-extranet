@@ -4,7 +4,7 @@
 	</div>
 	<nav>
 		<div class="container-nav">
-			<label for="mobile"><img src="images/menu.svg" class="img-menu"></label>
+			<label for="mobile"><img src="images/menu.svg" class="img-menu" alt="bouton menu"></label>
 			<input type="checkbox" id="mobile" role="button">
 			<ul>
 				<li class="grow"><a href="partners.php"><i class="far fa-list-alt"></i>   Partenaires</a></li>

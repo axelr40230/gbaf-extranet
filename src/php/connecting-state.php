@@ -11,4 +11,3 @@ if (isset($_SESSION['id']) AND isset($_SESSION['user'])) {
     $info = 'BIENVENUE sur la page d\'identification de votre Extranet </br>(espace réservé aux adhérents GBAF).';
     }
 
-?>

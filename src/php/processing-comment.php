@@ -22,4 +22,3 @@ if (isset($_POST['valider'])) {
     $message_comment = '<i class="far fa-comment"></i> Laisser un commentaire';
     
 }
-?>

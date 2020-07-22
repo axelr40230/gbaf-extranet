@@ -13,8 +13,7 @@ body
 {
 	width: 100%;
 	margin: auto;
-	background-color: #f8f8f8;
-	cursor: url("../images/cursor.png"), auto;
+	background-color: #f8f8f8;	    
 }
 
 .bg
@@ -141,7 +140,7 @@ hr.space
 a
 {
 	color: #22435D;
-	cursor: url("../images/cursor.png"), auto;
+	
 }
 
 p
@@ -175,7 +174,7 @@ p
 	box-shadow: -5px -5px 0px #22435D;
 	transform: scale(1);
 	transition: transform 400ms;
-	cursor: url("../images/cursor.png"), auto;
+	
 	border-radius: 5px;
 }
 
@@ -266,7 +265,7 @@ p
 	color: #fff;
 }
 a.white-text{
-  cursor: url("../images/cursor.png"), auto;  
+    
 }
 .red-text
 {
@@ -303,6 +302,7 @@ footer
 	padding: 5px 0 5px 0;
 	background-color: #22435D;
 	color: #fff;
+    min-height:20vh;
 }
 
 .big-container
@@ -312,7 +312,12 @@ footer
 	flex-flow: row wrap;
 	justify-content: space-around;
 }
-
+.row{
+    display:block;
+}
+a.row{
+    width: 50%;
+}
 .mega
 {
 	display: flex;
@@ -322,6 +327,7 @@ footer
 	flex-flow: column wrap;
 	padding: 0 20px 0 20px;
 	width: 70%;
+    min-height:50vh;
 }
 
 .block
@@ -336,11 +342,7 @@ footer
 	background-color: #fff;
 	margin: 20px;
 	padding: 0;
-	-moz-box-shadow: 0px 0px 30px 1px #e7e7e7;
-	-webkit-box-shadow: 0px 0px 30px 1px #e7e7e7;
-	-o-box-shadow: 0px 0px 30px 1px #e7e7e7;
-	box-shadow: 0px 0px 30px 1px #e7e7e7;
-	filter:progid:DXImageTransform.Microsoft.Shadow(color=#e7e7e7, Direction=NaN, Strength=30);
+    box-shadow: 0px 0px 30px 1px #e7e7e7;	
 }
 
 .title-partner
@@ -403,11 +405,6 @@ ul.pagination li a:hover
 	color: #FFF;
 	background-color: #FF0000;
 	transform: scale(1.15);
-}
-
-ul.pagination li a:selected
-{
-	background-color: #FF0000;
 }
 
 div.center
@@ -557,7 +554,7 @@ nav ul
 form
 {
 	width: 100%;
-	cursor: url("../images/cursor.png"), auto;
+	
 }
 
 .field-form
@@ -634,7 +631,7 @@ input[type=submit]
 	box-shadow: -5px -5px 0px #22435D;
 	transform: scale(1);
 	transition: transform 400ms;
-	cursor: url("../images/cursor.png"), auto;
+	
 }
 
 input[type=submit]:hover
@@ -646,9 +643,6 @@ input[type=submit]:hover
 
 input[type=checkbox]
 {
-	-webkit-appearance: checkbox;
-	-moz-appearance: checkbox;
-	appearance: checkbox;
 	display: inline-block;
 	margin: 0 auto;
 	width: auto;

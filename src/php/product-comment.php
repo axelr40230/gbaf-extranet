@@ -35,7 +35,7 @@ if (isset($_GET['page']) AND !empty($_GET['page']) AND $_GET['page'] > 0 AND $_G
 $base = ($pageCourante - 1) * $commentPerPage;
     
 ?>
-  <h2 class="title product-detail"><i class="fab fa-readme fa-5x"></i></br><?php
+  <h2 class="title product-detail"><i class="fab fa-readme fa-5x"></i><br /><?php
 echo $number_comment;
 ?></h2>
     <?php
@@ -52,20 +52,12 @@ while ($donnees = $req->fetch())
   <div class="white-box">
         <p class="left-text">
             <i class="fas fa-comment"></i>
-             Le 
-            <?php
-    echo htmlspecialchars($donnees['date_add_fr']);
-?>
-          , 
-            <?php
-    echo htmlspecialchars($donnees['user_name']);
-?>
-           a écrit
+             Le <?php echo htmlspecialchars($donnees['date_add_fr']); ?>, <?php echo htmlspecialchars($donnees['user_name']);?> a écrit
         </p>
         <hr class="left">
         <p class="left-text">
             <?php
-    echo htmlspecialchars($donnees['comment']);
+    echo htmlspecialchars_decode($donnees['comment']);
 ?>
       </p>
     </div>

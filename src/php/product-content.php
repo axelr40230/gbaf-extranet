@@ -13,7 +13,7 @@ if (isset($_GET['id'])) {
    <p>
         <img src="<?php
         echo ($donnees['logo']);
-?>" width="100%" height="100%" alt="Banque numérique" class="illustration">
+?>" alt="Banque numérique" class="illustration">
         <br />
         <br />
     </p>

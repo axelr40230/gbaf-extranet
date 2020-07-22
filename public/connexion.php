@@ -5,7 +5,7 @@ require '../src/php/connection-state.php';
 require '../src/php/processing-connection.php';
 ?>
 <!doctype html>
-<html>
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width" />
@@ -33,7 +33,7 @@ require '../src/php/processing-connection.php';
 				</p>
 			</div>
 			<div class="big-container">
-				<form action="" method="post">
+				<form action="#" method="post">
 					<div class="field-form">
 						<p class="red-text">
 							<?php echo $message; ?>

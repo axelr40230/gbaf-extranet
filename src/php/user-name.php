@@ -11,4 +11,3 @@ if (isset($_SESSION['id'])) {
     $prenom  = $donnees['prenom'];
     $identity =  $nom . ' ' . $prenom;    
 }
-?>

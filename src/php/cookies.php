@@ -5,4 +5,3 @@ session_start();
 $_SESSION['id']   = $resultat['id'];
 $_SESSION['user'] = $user;
 Header('Location: partners.php');
-?>

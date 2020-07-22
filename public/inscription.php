@@ -4,7 +4,7 @@ session_start();
 require '../src/php/processing-recording.php';
 ?>
 <!doctype html>
-<html>
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width" />
@@ -29,7 +29,7 @@ require '../src/php/processing-recording.php';
 				</p>
 			</div>
 			<div class="big-container">
-				<form action="" method="post">
+				<form action="#" method="post">
 					<p class="red-text">
 						<?php echo $message ?>
 					</p>

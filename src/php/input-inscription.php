@@ -4,4 +4,3 @@ $listing_question = $db->query('SELECT * FROM gbaf20_question');
     foreach ($value as $values_questions){
         $value_input = $value;
     }
-?>

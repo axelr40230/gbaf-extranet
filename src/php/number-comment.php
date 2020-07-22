@@ -15,4 +15,3 @@ if ($number > 1) {
     echo 'Soyez le premier à laisser un commentaire ! ';
     
 }
-?>
